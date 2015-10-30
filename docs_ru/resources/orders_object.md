@@ -12,6 +12,7 @@ editing | [Order.Editing](#editing) | Конфигурация редактир�
 cost | [Order.Cost](#cost) | Стоимость
 services | [[Order.Service](#service)] | Массив услуг
  
+ 
 #### Объект <a name="status">`Order.Status`</a>
  
 Имя | Тип | Описание
@@ -23,6 +24,7 @@ isGiven | boolean | Заказ выдан
 isCanceled | boolean | Заказ отменен
 isPaid | boolean | Заказ оплачен
 canUserRequestDriverCallback | boolean | Возможность запроса звонка от водителя
+
 
 #### Объект <a name="service">`Order.Service`</a>
 
