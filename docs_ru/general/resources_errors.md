@@ -5,33 +5,20 @@
 **Пример**
 
 ```js
-HTTP/1.1 401 Unauthorized
-Content-Type: application/json;charset=UTF-8
-Cache-Control: no-store
-Pragma: no-cache
-
+HTTP/1.1 400 Bad Request
 {
-  "message": "Короткий текст ошибки", //обязательно
-  "description": "Длинный текст ошибки",
+  "message": "<Короткий текст ошибки>", //обязательно
+  "description": "<Длинный текст ошибки>",
   "code": 21,
   "fields": {
     "from": {
       "address": {
         "error": "incorrectAddress", //обязательно
-        "message": "Доставка на этот адрес недоступна", //обязательно
-        "description": "Длинный текст ошибки"
+        "message": "<Доставка на этот адрес недоступна>", //обязательно
+        "description": "<Длинный текст ошибки>"
       }
     }
   }
-}
-```
-
-#### Внутренняя ошибка
-
-```js
-HTTP/1.1 500 Internal Server Error
-{
-    "message" : "Internal server error"
 }
 ```
 
@@ -59,6 +46,15 @@ HTTP/1.1 400 Bad Request
 HTTP/1.1 403 Forbidden
 {
     "message" : "Forbidden"
+}
+```
+
+#### Внутренняя ошибка
+
+```js
+HTTP/1.1 500 Internal Server Error
+{
+    "message" : "Internal server error"
 }
 ```
 
