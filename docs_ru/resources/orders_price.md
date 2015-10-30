@@ -7,7 +7,7 @@
 Имя | Тип | Описание
 --- | --- | ---
 id | string | Идентификатор заказа
-services | [Order.Service](orders_object#service) | Номер заказа
+services | [Order.Service](orders_object.md#service) | Номер заказа
 promoCode | string | Промокод
 save | boolean[Order.Status](#status) | Статус заказа
 organization | [Order.Organization](#organization) | Организация, осуществляющая перевозку
@@ -21,6 +21,8 @@ services | [Order.Services](#services) | Массив услуг
 ```js
 HTTP/1.1 200 OK
 {
-    "data" : [объект Order](order_object)
+    "data" : Order
 }
 ```
+
+Order - [объект заказа](orders_object.md)
