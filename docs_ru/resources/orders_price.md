@@ -9,7 +9,7 @@
 id | string | Идентификатор заказа
 services | [[Order.Service](orders_object.md#service)] | Услуги, участвующие в заказе
 promoCode | string | Промокод
-save | boolean[Order.Status](#status) | Сохранять расчет
+save | [Order.Status](#status) | Сохранять расчет
 
 ---
 
