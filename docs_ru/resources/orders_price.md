@@ -7,14 +7,9 @@
 Имя | Тип | Описание
 --- | --- | ---
 id | string | Идентификатор заказа
-services | [Order.Service](orders_object.md#service) | Номер заказа
+services | [[Order.Service](orders_object.md#service)] | Услуги, участвующие в заказе
 promoCode | string | Промокод
-save | boolean[Order.Status](#status) | Статус заказа
-organization | [Order.Organization](#organization) | Организация, осуществляющая перевозку
-dates | [Order.Dates](#dates) | Даты создания/обновления заказа
-editing | [Order.Editing](#editing) | Конфигурация редактирования заказа
-cost | [Order.Cost](#cost) | Стоимость
-services | [Order.Services](#services) | Массив услуг
+save | boolean[Order.Status](#status) | Сохранять расче
 
 Возвращает:
 
@@ -25,4 +20,10 @@ HTTP/1.1 200 OK
 }
 ```
 
-Order - [объект заказа](orders_object.md)
+Order - [объект заказа](orders_object.md) с полями:
+
+* balance
+* cost
+* editing
+* services
+
