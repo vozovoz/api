@@ -38,9 +38,9 @@ type | string | Тип услуги | shipping
 name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | object | Контрагенты, участвующие в заказе:
-&nbsp; counteragents.payer | [Counteragent](counteragent) | плательщик
-&nbsp; counteragents.shipper | [Counteragent](counteragent) | отправитель
-&nbsp; counteragents.consignee | [Counteragent](counteragent) | получатель
+&nbsp; counteragents.payer |&nbsp;  [Counteragent](counteragent) |&nbsp;  плательщик
+&nbsp; counteragents.shipper |&nbsp;  [Counteragent](counteragent) |&nbsp;  отправитель
+&nbsp; counteragents.consignee |&nbsp;  [Counteragent](counteragent) |&nbsp;  получатель
 from | [Location](location) | Место отправления
 to | [Location](location) | Место получения
 cargo | [Order.Cargo](#cargo) | Груз
