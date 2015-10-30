@@ -1,7 +1,5 @@
 # Vozovoz API
 
-**По-русски** | [In english](docs_eng/README.md)
-
 Vozovoz API представляет REST интерфейс для взаимодействия с сайтом vozovoz.ru.
 В качестве протокола передачи данных используется HTTPS.
 
@@ -24,7 +22,7 @@ Vozovoz API представляет REST интерфейс для взаимо
 <a name="resources" />
 ### Ресурсы
 
-* [Заказы](docs_ru/resources/orders.md)
+* Заказы
   * [Объект заказа](docs_ru/resources/orders_object.md)
   * [Получение заказа](docs_ru/resources/orders_get.md)
   * [Создание заказа](docs_ru/resources/orders_create.md)
