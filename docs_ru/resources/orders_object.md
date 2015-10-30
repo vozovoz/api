@@ -33,12 +33,12 @@ canUserRequestDriverCallback | boolean | Возможность запроса �
 Имя | Тип | Описание | Значение
 --- | --- | -------- | -------- 
 type | string | Тип услуги | `shipping`
-name | string | Название услуги | `Межтерминальная доставка`
+name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | object | Контрагенты, участвующие в заказе:
-└ payer | [Counteragent](counteragent) | плательщик
-└ shipper | [Counteragent](counteragent) | отправитель
-└ consignee | [Counteragent](counteragent) | получатель
+counteragents.payer | [Counteragent](counteragent) | плательщик
+counteragents.shipper | [Counteragent](counteragent) | отправитель
+counteragents.consignee | [Counteragent](counteragent) | получатель
 from | [Location](location) | Место отправления
 to | [Location](location) | Место получения
 cargo | [Order.Cargo](#cargo) | Груз
