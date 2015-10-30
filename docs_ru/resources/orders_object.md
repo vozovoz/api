@@ -13,7 +13,7 @@ cost | [Order.Cost](#cost) | Стоимость
 services | [[Order.Service](#service)] | Массив услуг
  
  
-#### <a name="status">`Order.Status`</a>
+#### Объект <a name="status">`Order.Status`</a>
  
 Имя | Тип | Описание
 --- | --- | ------
@@ -26,11 +26,11 @@ isPaid | boolean | Заказ оплачен
 canUserRequestDriverCallback | boolean | Возможность запроса звонка от водителя
 
 
-#### <a name="service">`Order.Service`</a>
+#### Объект <a name="service">`Order.Service`</a>
 
 В зависимости от типа услуги, объект тип Order.Service может содержать различные поля
  
-##### «Межтерминальная доставка»
+##### Услуга «Межтерминальная доставка»
 
 Имя | Тип | Описание | Значение
 --- | --- | -------- | -------- 
