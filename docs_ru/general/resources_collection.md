@@ -29,8 +29,6 @@ HTTP/1.1 200 OK
 
 `GET https://api.vozovoz.ru/v1/news`
 
-Возвращает:
-
 ```js
 HTTP/1.1 200 OK
 {
