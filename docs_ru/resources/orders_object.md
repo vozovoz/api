@@ -1,4 +1,4 @@
-# `Order`
+# Объект `Order`
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -12,7 +12,7 @@ editing | [Order.Editing](#editing) | Конфигурация редактир�
 cost | [Order.Cost](#cost) | Стоимость
 services | [[Order.Service](#service)] | Массив услуг
  
-#### <a name="status">`Order.Status`</a>
+#### Объект <a name="status">`Order.Status`</a>
  
 Имя | Тип | Описание
 --- | --- | ------
@@ -24,7 +24,7 @@ isCanceled | boolean | Заказ отменен
 isPaid | boolean | Заказ оплачен
 canUserRequestDriverCallback | boolean | Возможность запроса звонка от водителя
 
-#### <a name="service">`Order.Service`</a>
+#### Объект <a name="service">`Order.Service`</a>
 
 В зависимости от типа услуги, объект тип Order.Service может содержать различные поля
  
