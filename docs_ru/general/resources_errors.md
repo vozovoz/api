@@ -19,7 +19,7 @@ Pragma: no-cache
       "address": {
         "error": "incorrectAddress", //обязательно
         "message": "Доставка на этот адрес недоступна", //обязательно
-        "description: "Длинный текст ошибки"
+        "description": "Длинный текст ошибки"
       }
     }
   }
