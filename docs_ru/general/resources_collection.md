@@ -4,6 +4,8 @@
 
 `GET https://api.vozovoz.ru/v1/[название ресурса]`
 
+---
+
 ```js
 HTTP/1.1 200 OK
 {
@@ -28,6 +30,8 @@ HTTP/1.1 200 OK
 **Пример**
 
 `GET https://api.vozovoz.ru/v1/news`
+
+---
 
 ```js
 HTTP/1.1 200 OK
