@@ -36,11 +36,10 @@ type | string | Тип услуги | `shipping`
 name | string | Название услуги | `Межтерминальная доставка`
 sortIndex | number | Индекс сортировки |
 counteragents | object | Контрагенты, участвующие в заказе:
-                         `payer` - плательщик
-                         `shipper` - отправитель
-                         `consignee` - получатель
-                         `payer, shipper, consignee - объекты типа [Counteragent](counteragent)
-from | [Location](location) |  отменен
-to | [Location](location) | Заказ оплачен
-cargo | [Order.Cargo](#cargo) | Возможность запроса звонка от водителя
-cost | [Order.Service.Cost](#service.cost) | Возможность запроса звонка от водителя
+└ payer | [Counteragent](counteragent) | плательщик
+└ shipper | [Counteragent](counteragent) | отправитель
+└ consignee | [Counteragent](counteragent) | получатель
+from | [Location](location) | Место отправления
+to | [Location](location) | Место получения
+cargo | [Order.Cargo](#cargo) | Груз
+cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
