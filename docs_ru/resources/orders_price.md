@@ -11,7 +11,7 @@ services | [[Order.Service](orders_object.md#service)] | Услуги, учас�
 promoCode | string | Промокод
 save | boolean[Order.Status](#status) | Сохранять расчет
 
-Ответ:
+---
 
 ```js
 HTTP/1.1 200 OK
