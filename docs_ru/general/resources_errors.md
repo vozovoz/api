@@ -10,29 +10,18 @@ Content-Type: application/json;charset=UTF-8
 Cache-Control: no-store
 Pragma: no-cache
 {
-  ["error":  "validation",]
-  "code":    21,
-  "message": "Bad request",
-  ["url":    "http://api.vozovoz.ru/errors/21",]
-  "fields":  [
-    {
-      "field":    "password",
-      "error":    "isEmpty",
-      ["message": "Password is empty"]
-    },
-    {
-      "field": "email",
-      "error": "exists"
-    },
-    {
-      "field": "sex",
-      "error": "isEmpty"
-    },
-    {
-      "field": "login",
-      "error": "exists"
+  "message": "Короткий текст ошибки", //обязательно
+  "description": "Длинный текст ошибки",
+  "code": 21,
+  "fields": {
+    from: {
+      address: {
+            "error": "incorrectAddress", //обязательно
+            "message": "Доставка на этот адрес недоступна", //обязательно
+            "description: "Длинный текст ошибки",
+          }
+        }
     }
-  ]
 }
 ```
 
@@ -41,8 +30,7 @@ Pragma: no-cache
 ```js
 HTTP/1.1 500 Internal Server Error
 {
-    "error" : "Internal server error",
-    "code"  : 10
+    "message" : "Internal server error"
 }
 ```
 
@@ -51,8 +39,7 @@ HTTP/1.1 500 Internal Server Error
 ```js
 HTTP/1.1 404 Not Found
 {
-    "error" : "Resource not found",
-    "code"  : 20
+    "message" : "Resource not found"
 }
 ```
 
@@ -61,39 +48,25 @@ HTTP/1.1 404 Not Found
 ```js
 HTTP/1.1 400 Bad Request
 {
-    "error" : "Bad request",
-    "code"  : 21
+    "message" : "Bad request"
 }
 ```
 
 #### Нет доступа к ресурсу
 
 ```js
-HTTP/1.1 403 Forbiden
+HTTP/1.1 403 Forbidden
 {
-    "error" : "Forbidden",
-    "code"  : 22
+    "message" : "Forbidden"
 }
 ```
-
-#### Неподтвержденный пользователь
-
-```js
-HTTP/1.1 403 Forbiden
-{
-    "error" : "User not confirmed",
-    "code"  : 25
-}
-```
-
 
 #### Технические работы
 
 ```js
 HTTP/1.1 503 Service Unavailable
 {
-    "error" : "Maintenance",
-    "code"  : 11
+    "message" : "Maintenance"
 }
 ```
 
