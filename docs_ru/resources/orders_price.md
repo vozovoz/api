@@ -1,26 +1,26 @@
-# Получение заказа
+# РџРѕР»СѓС‡РµРЅРёРµ Р·Р°РєР°Р·Р°
 
 `GET https://api.vozovoz.ru/v1/orders/[ID]`
 
-Параметры запроса:
+РџР°СЂР°РјРµС‚СЂС‹ Р·Р°РїСЂРѕСЃР°:
 
-Имя | Тип | Описание
+РРјСЏ | РўРёРї | РћРїРёСЃР°РЅРёРµ
 --- | --- | ---
-id | string | Идентификатор заказа
-services | [Order.Service](orders_object#service) | Номер заказа
-promoCode | string | Промокод
-save | boolean[Order.Status](#status) | Статус заказа
-organization | [Order.Organization](#organization) | Организация, осуществляющая перевозку
-dates | [Order.Dates](#dates) | Даты создания/обновления заказа
-editing | [Order.Editing](#editing) | Конфигурация редактирования заказа
-cost | [Order.Cost](#cost) | Стоимость
-services | [Order.Services](#services) | Массив услуг
+id | string | РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р·Р°РєР°Р·Р°
+services | [Order.Service](orders_object#service) | РќРѕРјРµСЂ Р·Р°РєР°Р·Р°
+promoCode | string | РџСЂРѕРјРѕРєРѕРґ
+save | boolean[Order.Status](#status) | РЎС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°
+organization | [Order.Organization](#organization) | РћСЂРіР°РЅРёР·Р°С†РёСЏ, РѕСЃСѓС‰РµСЃС‚РІР»СЏСЋС‰Р°СЏ РїРµСЂРµРІРѕР·РєСѓ
+dates | [Order.Dates](#dates) | Р”Р°С‚С‹ СЃРѕР·РґР°РЅРёСЏ/РѕР±РЅРѕРІР»РµРЅРёСЏ Р·Р°РєР°Р·Р°
+editing | [Order.Editing](#editing) | РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ Р·Р°РєР°Р·Р°
+cost | [Order.Cost](#cost) | РЎС‚РѕРёРјРѕСЃС‚СЊ
+services | [Order.Services](#services) | РњР°СЃСЃРёРІ СѓСЃР»СѓРі
 
-Возвращает:
+Р’РѕР·РІСЂР°С‰Р°РµС‚:
 
 ```js
 HTTP/1.1 200 OK
 {
-    "data" : [объект Order](order_object)
+    "data" : [РѕР±СЉРµРєС‚ Order](order_object)
 }
 ```

@@ -1,12 +1,12 @@
-# Получение заказа
+# РџРѕР»СѓС‡РµРЅРёРµ Р·Р°РєР°Р·Р°
 
 `GET https://api.vozovoz.ru/v1/orders/[ID]`
 
-Возвращает:
+Р’РѕР·РІСЂР°С‰Р°РµС‚:
 
 ```js
 HTTP/1.1 200 OK
 {
-    "data" : [объект Order](order_object)
+    "data" : [РѕР±СЉРµРєС‚ Order](order_object)
 }
 ```

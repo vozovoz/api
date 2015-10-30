@@ -1,46 +1,46 @@
-# Объект `Order`
+# РћР±СЉРµРєС‚ `Order`
 
-Имя | Тип | Описание
+РРјСЏ | РўРёРї | РћРїРёСЃР°РЅРёРµ
 --- | --- | ---
-id | string | Идентификатор заказа
-number | string | Номер заказа
-promoCode | string | Промокод
-status | [Order.Status](#status) | Статус заказа
-organization | [Order.Organization](#organization) | Организация, осуществляющая перевозку
-dates | [Order.Dates](#dates) | Даты создания/обновления заказа
-editing | [Order.Editing](#editing) | Конфигурация редактирования заказа
-cost | [Order.Cost](#cost) | Стоимость
-services | [[Order.Service](#service)] | Массив услуг
+id | string | РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р·Р°РєР°Р·Р°
+number | string | РќРѕРјРµСЂ Р·Р°РєР°Р·Р°
+promoCode | string | РџСЂРѕРјРѕРєРѕРґ
+status | [Order.Status](#status) | РЎС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°
+organization | [Order.Organization](#organization) | РћСЂРіР°РЅРёР·Р°С†РёСЏ, РѕСЃСѓС‰РµСЃС‚РІР»СЏСЋС‰Р°СЏ РїРµСЂРµРІРѕР·РєСѓ
+dates | [Order.Dates](#dates) | Р”Р°С‚С‹ СЃРѕР·РґР°РЅРёСЏ/РѕР±РЅРѕРІР»РµРЅРёСЏ Р·Р°РєР°Р·Р°
+editing | [Order.Editing](#editing) | РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ Р·Р°РєР°Р·Р°
+cost | [Order.Cost](#cost) | РЎС‚РѕРёРјРѕСЃС‚СЊ
+services | [[Order.Service](#service)] | РњР°СЃСЃРёРІ СѓСЃР»СѓРі
  
-#### Объект <a name="status">`Order.Status`</a>
+#### РћР±СЉРµРєС‚ <a name="status">`Order.Status`</a>
  
-Имя | Тип | Описание
+РРјСЏ | РўРёРї | РћРїРёСЃР°РЅРёРµ
 --- | --- | ------
-message | string | Краткое описание статуса
-description | string | Полное описание статуса
-isTaken | boolean | Заказ принят
-isGiven | boolean | Заказ выдан
-isCanceled | boolean | Заказ отменен
-isPaid | boolean | Заказ оплачен
-canUserRequestDriverCallback | boolean | Возможность запроса звонка от водителя
+message | string | РљСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ СЃС‚Р°С‚СѓСЃР°
+description | string | РџРѕР»РЅРѕРµ РѕРїРёСЃР°РЅРёРµ СЃС‚Р°С‚СѓСЃР°
+isTaken | boolean | Р—Р°РєР°Р· РїСЂРёРЅСЏС‚
+isGiven | boolean | Р—Р°РєР°Р· РІС‹РґР°РЅ
+isCanceled | boolean | Р—Р°РєР°Р· РѕС‚РјРµРЅРµРЅ
+isPaid | boolean | Р—Р°РєР°Р· РѕРїР»Р°С‡РµРЅ
+canUserRequestDriverCallback | boolean | Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°РїСЂРѕСЃР° Р·РІРѕРЅРєР° РѕС‚ РІРѕРґРёС‚РµР»СЏ
 
-#### Объект <a name="service">`Order.Service`</a>
+#### РћР±СЉРµРєС‚ <a name="service">`Order.Service`</a>
 
-В зависимости от типа услуги, объект тип Order.Service может содержать различные поля
+Р’ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‚РёРїР° СѓСЃР»СѓРіРё, РѕР±СЉРµРєС‚ С‚РёРї Order.Service РјРѕР¶РµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ СЂР°Р·Р»РёС‡РЅС‹Рµ РїРѕР»СЏ
  
-##### Услуга «Межтерминальная доставка»
+##### РЈСЃР»СѓРіР° В«РњРµР¶С‚РµСЂРјРёРЅР°Р»СЊРЅР°СЏ РґРѕСЃС‚Р°РІРєР°В»
 
-Имя | Тип | Описание | Значение
+РРјСЏ | РўРёРї | РћРїРёСЃР°РЅРёРµ | Р—РЅР°С‡РµРЅРёРµ
 --- | --- | -------- | -------- 
-type | string | Тип услуги | `shipping`
-name | string | Название услуги | `Межтерминальная доставка`
-sortIndex | number | Индекс сортировки |
-counteragents | object | Контрагенты, участвующие в заказе:
-                         `payer` - плательщик
-                         `shipper` - отправитель
-                         `consignee` - получатель
-                         `payer, shipper, consignee - объекты типа [Counteragent](counteragent)
-from | [Location](location) |  отменен
-to | [Location](location) | Заказ оплачен
-cargo | [Order.Cargo](#cargo) | Возможность запроса звонка от водителя
-cost | [Order.Service.Cost](#service.cost) | Возможность запроса звонка от водителя
+type | string | РўРёРї СѓСЃР»СѓРіРё | `shipping`
+name | string | РќР°Р·РІР°РЅРёРµ СѓСЃР»СѓРіРё | `РњРµР¶С‚РµСЂРјРёРЅР°Р»СЊРЅР°СЏ РґРѕСЃС‚Р°РІРєР°`
+sortIndex | number | РРЅРґРµРєСЃ СЃРѕСЂС‚РёСЂРѕРІРєРё |
+counteragents | object | РљРѕРЅС‚СЂР°РіРµРЅС‚С‹, СѓС‡Р°СЃС‚РІСѓСЋС‰РёРµ РІ Р·Р°РєР°Р·Рµ:
+                         `payer` - РїР»Р°С‚РµР»СЊС‰РёРє
+                         `shipper` - РѕС‚РїСЂР°РІРёС‚РµР»СЊ
+                         `consignee` - РїРѕР»СѓС‡Р°С‚РµР»СЊ
+                         `payer, shipper, consignee - РѕР±СЉРµРєС‚С‹ С‚РёРїР° [Counteragent](counteragent)
+from | [Location](location) |  РѕС‚РјРµРЅРµРЅ
+to | [Location](location) | Р—Р°РєР°Р· РѕРїР»Р°С‡РµРЅ
+cargo | [Order.Cargo](#cargo) | Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°РїСЂРѕСЃР° Р·РІРѕРЅРєР° РѕС‚ РІРѕРґРёС‚РµР»СЏ
+cost | [Order.Service.Cost](#service.cost) | Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°РїСЂРѕСЃР° Р·РІРѕРЅРєР° РѕС‚ РІРѕРґРёС‚РµР»СЏ
