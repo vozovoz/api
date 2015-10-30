@@ -10,4 +10,4 @@ HTTP/1.1 200 OK
     "data" : Order
 }
 ```
-Order - [объект заказа](orders_object)
+Order - [объект заказа](orders_object.md)
