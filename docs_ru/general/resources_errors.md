@@ -9,6 +9,7 @@ HTTP/1.1 401 Unauthorized
 Content-Type: application/json;charset=UTF-8
 Cache-Control: no-store
 Pragma: no-cache
+
 {
   "message": "Короткий текст ошибки", //обязательно
   "description": "Длинный текст ошибки",
@@ -16,12 +17,12 @@ Pragma: no-cache
   "fields": {
     from: {
       address: {
-            "error": "incorrectAddress", //обязательно
-            "message": "Доставка на этот адрес недоступна", //обязательно
-            "description: "Длинный текст ошибки",
-          }
-        }
+        "error": "incorrectAddress", //обязательно
+        "message": "Доставка на этот адрес недоступна", //обязательно
+        "description: "Длинный текст ошибки"
+      }
     }
+  }
 }
 ```
 
