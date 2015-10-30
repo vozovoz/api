@@ -9,7 +9,7 @@
 id | string | Идентификатор заказа
 services | [[Order.Service](orders_object.md#service)] | Услуги, участвующие в заказе
 promoCode | string | Промокод
-save | boolean[Order.Status](#status) | Сохранять расче
+save | boolean[Order.Status](#status) | Сохранять расчет
 
 Возвращает:
 
@@ -20,10 +20,5 @@ HTTP/1.1 200 OK
 }
 ```
 
-Order - [объект заказа](orders_object.md) с полями:
-
-* balance
-* cost
-* editing
-* services
+Order - [объект заказа](orders_object.md) с полями `balance`, `cost`, `editing`, `services`
 
