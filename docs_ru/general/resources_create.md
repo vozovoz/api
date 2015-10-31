@@ -18,12 +18,9 @@ HTTP/1.1 201 Created
 
 **Пример**
 
-```js
+```
 POST https://api.vozovoz.ru/v1/news
-{
-    "title":       "Новость 1",
-    "description": "Краткое описание новости 1"
-}
+title=Новость+1&description=Краткое+описание+новости+1
 ```
 
 ---
