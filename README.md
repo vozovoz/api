@@ -11,7 +11,6 @@ Vozovoz API представляет REST-интерфейс для взаимо
   * [Получение объекта](docs_ru/general/resources_object.md)
   * [Создание объекта](docs_ru/general/resources_create.md)
   * [Изменение объекта](docs_ru/general/resources_edit.md)
-  * [Частичное изменение объекта](docs_ru/general/resources_patch.md)
   * [Удаление объекта](docs_ru/general/resources_delete.md)
   * [Ошибки и коды ответов](docs_ru/general/resources_errors.md)
 * [Аутенфикация](docs_ru/general/authorization.md)
