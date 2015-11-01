@@ -4,11 +4,11 @@
 
 Имя | Тип | Описание | значение
 --- | --- | -------- | --------
-payer | [Counteragents.Counteragent](#counteragent) |Плательщик
-shipper | [Counteragents.Counteragent](#counteragent) |Отправитель
-consignee | [Counteragents.Counteragent](#counteragent) |Получатель
+payer | [Counteragent](#counteragent) |Плательщик
+shipper | [Counteragent](#counteragent) |Отправитель
+consignee | [Counteragent](#counteragent) |Получатель
 
-## Объект <a name="counteragent">`Counteragents.Counteragent`</a>
+## Объект <a name="counteragent">`Counteragent`</a>
 
 #### Физическое лицо
 
