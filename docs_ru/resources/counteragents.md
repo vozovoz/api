@@ -4,9 +4,9 @@
 
 Имя | Тип | Описание | значение
 --- | --- | -------- | --------
-payer | [Counteragent](#counteragent) |Плательщик
-shipper | [Counteragent](#counteragent) |Отправитель
-consignee | [Counteragent](#counteragent) |Получатель
+payer | [Counteragents.Counteragent](#counteragent) |Плательщик
+shipper | [Counteragents.Counteragent](#counteragent) |Отправитель
+consignee | [Counteragents.Counteragent](#counteragent) |Получатель
 
 ## Объект <a name="counteragent">`Counteragents.Counteragent`</a>
 
