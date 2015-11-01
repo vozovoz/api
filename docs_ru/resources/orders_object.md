@@ -66,8 +66,8 @@ type | string | Тип услуги | "shipping"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-from | [Location](location) | Место отправления
-to | [Location](location) | Место получения
+from | [Location](locations.md) | Место отправления
+to | [Location](locations.md) | Место получения
 cargo | [Order.Cargo](#cargo) | Груз
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 
@@ -79,7 +79,7 @@ type | string | Тип услуги | "deliveryFrom"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-from | [Location](location) | Место забора груза
+from | [Location](locations.md) | Место забора груза
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Отвоз груза»
@@ -90,7 +90,7 @@ type | string | Тип услуги | "deliveryTo"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-to | [Location](location) | Место отвоза груза
+to | [Location](locations.md) | Место отвоза груза
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Ответственное хранение»
