@@ -1,24 +1,22 @@
-# Создание заказа
+# Получение заказа
 
-`GET https://vozovoz.ru/api/v1/orders/price`
+`POST https://vozovoz.ru/api/v1/orders`
 
 Параметры запроса:
 
-Имя | Тип | Обязательный | Описание
---- | --- | ------------ | --------
-services | [[Order.Service](orders_object.md#service)] | да | Услуги, участвующие в заказе
-promoCode | string | нет | Промокод
-phoneNumber | string | если пользователь не авторизван, или если у пользователя нет телефона | Телефонный номер автора заказа
-smsCode | string | если пользователь не авторизван, или если у пользователя нет телефона | Смс-код подтверждения телефона
+Имя | Тип | Описание
+--- | --- | ---
+services | [[Order.Service](orders_object.md#service)] | Услуги, участвующие в заказе
+promoCode | string | Промокод
+save | [Order.Status](#status) | Сохранять расчет
 
 ---
 
 ```js
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 {
-    "data" : [объект Order]
+    "data" : Order
 }
 ```
 
-Order - [объект заказа](orders_object.md)
-
+Order - [объект заказа](orders_object.md), ограниченный полями `balance`, `cost`, `editing`, `services`
