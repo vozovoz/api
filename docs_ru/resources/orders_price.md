@@ -4,20 +4,21 @@
 
 Параметры запроса:
 
-Имя | Тип | Описание
---- | --- | ---
-services | [[Order.Service](orders_object.md#service)] | Услуги, участвующие в заказе
-promoCode | string | Промокод
-save | [Order.Status](#status) | Сохранять расчет
+Имя | Тип | Обязательный | Описание
+--- | --- | ------------ | --------
+services | [[Order.Service](orders_object.md#service)] | да | Услуги, участвующие в заказе
+promoCode | string | нет | Промокод
+phoneNumber | string | если пользователь не авторизван, или если у пользователя нет телефона | Телефонный номер автора заказа
+smsCode | string | если пользователь не авторизван, или если у пользователя нет телефона | Смс-код подтверждения телефона
 
 ---
 
 ```js
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 {
-    "data" : Order
+    "data" : [объект Order]
 }
 ```
 
-Order - [объект заказа](orders_object.md), ограниченный полями `balance`, `cost`, `editing`, `services`
+Order - [объект заказа](orders_object.md)
 
