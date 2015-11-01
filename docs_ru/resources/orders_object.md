@@ -65,10 +65,7 @@ total | number | Полная стоимость
 type | string | Тип услуги | "shipping"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки |
-counteragents | object | Контрагенты, участвующие в заказе:
-&nbsp; counteragents.payer |&nbsp;  [Counteragent](counteragent) |&nbsp;  Плательщик
-&nbsp; counteragents.shipper |&nbsp;  [Counteragent](counteragent) |&nbsp;  Отправитель
-&nbsp; counteragents.consignee |&nbsp;  [Counteragent](counteragent) |&nbsp;  Получатель
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 from | [Location](location) | Место отправления
 to | [Location](location) | Место получения
 cargo | [Order.Cargo](#cargo) | Груз
@@ -81,10 +78,7 @@ cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | "deliveryFrom"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки |
-counteragents | object | Контрагенты, участвующие в заказе:
-&nbsp; counteragents.payer |&nbsp;  [Counteragent](counteragent) |&nbsp;  Плательщик
-&nbsp; counteragents.shipper |&nbsp;  [Counteragent](counteragent) |&nbsp;  Отправитель
-&nbsp; counteragents.consignee |&nbsp;  [Counteragent](counteragent) |&nbsp;  Получатель
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 from | [Location](location) | Место забора груза
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 
@@ -95,10 +89,7 @@ cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | "deliveryTo"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки |
-counteragents | object | Контрагенты, участвующие в заказе:
-&nbsp; counteragents.payer |&nbsp;  [Counteragent](counteragent) |&nbsp;  Плательщик
-&nbsp; counteragents.shipper |&nbsp;  [Counteragent](counteragent) |&nbsp;  Отправитель
-&nbsp; counteragents.consignee |&nbsp;  [Counteragent](counteragent) |&nbsp;  Получатель
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 to | [Location](location) | Место отвоза груза
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 
@@ -111,10 +102,7 @@ name | string | Название услуги
 sortIndex | number | Индекс сортировки
 dates | object | Даты:
 &nbsp; dates.from |&nbsp;  object |&nbsp;  начало начисления платы за хранение
-counteragents | object | Контрагенты, участвующие в заказе:
-&nbsp; counteragents.payer |&nbsp;  [Counteragent](counteragent) |&nbsp;  Плательщик
-&nbsp; counteragents.shipper |&nbsp;  [Counteragent](counteragent) |&nbsp;  Отправитель
-&nbsp; counteragents.consignee |&nbsp;  [Counteragent](counteragent) |&nbsp;  Получатель
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Сбор за ценность груза»
@@ -124,10 +112,7 @@ cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | ""
 name | string | Название услуги
 sortIndex | number | Индекс сортировки
-counteragents | object | Контрагенты, участвующие в заказе:
-&nbsp; counteragents.payer |&nbsp;  [Counteragent](counteragent) |&nbsp;  Плательщик
-&nbsp; counteragents.shipper |&nbsp;  [Counteragent](counteragent) |&nbsp;  Отправитель
-&nbsp; counteragents.consignee |&nbsp;  [Counteragent](counteragent) |&nbsp;  Получатель
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Возврат сопроводительных документов»
@@ -137,8 +122,5 @@ cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | "returnOfSupportingDocuments"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки
-counteragents | object | Контрагенты, участвующие в заказе:
-&nbsp; counteragents.payer |&nbsp;  [Counteragent](counteragent) |&nbsp;  Плательщик
-&nbsp; counteragents.shipper |&nbsp;  [Counteragent](counteragent) |&nbsp;  Отправитель
-&nbsp; counteragents.consignee |&nbsp;  [Counteragent](counteragent) |&nbsp;  Получатель
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
