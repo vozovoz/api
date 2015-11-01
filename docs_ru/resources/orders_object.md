@@ -25,6 +25,34 @@ isCanceled | boolean | Заказ отменен
 isPaid | boolean | Заказ оплачен
 canUserRequestDriverCallback | boolean | Возможность запроса звонка от водителя
 
+#### Объект <a name="organization">`Order.Organization`</a>
+ 
+Имя | Тип | Описание
+--- | --- | ------
+id | string | organizationID
+name | string | Название
+
+#### Объект <a name="dates">`Order.Dates`</a>
+ 
+Имя | Тип | Описание
+--- | --- | ------
+created | string | Дата создания заказа
+updated | string | Дата обновления заказа
+arrivalFrom | string | Верхняя граница по времени прибытия груза
+arrivalTo | string | Нижняя граница по времени прибытия груза
+
+#### Объект <a name="editing">`Order.Editing`</a>
+ 
+Имя | Тип | Описание
+--- | --- | ------
+canBeCanceled | string | Заказ может быть отменен
+fields | boolean | Поля, доступные для редактирования
+
+#### Объект <a name="cost">`Order.Cost`</a>
+ 
+Имя | Тип | Описание
+--- | --- | ------
+total | number | Полная стоимость
 
 #### Объект <a name="service">`Order.Service`</a>
 
