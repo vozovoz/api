@@ -13,10 +13,10 @@ Vozovoz API представляет REST-интерфейс для взаимо
   * [Изменение объекта](docs_ru/general/resources_edit.md)
   * [Удаление объекта](docs_ru/general/resources_delete.md)
   * [Ошибки и коды ответов](docs_ru/general/resources_errors.md)
-* [Аутенфикация](docs_ru/general/authorization.md)
-  * [Получение ключа доступа пользователя](docs_ru/general/authorization_user.md)
-  * [Получение ключа доступа клиентского приложения](docs_ru/general/authorization_application.md)
-  * [Доступ к ресурсам](docs_ru/general/authorization_resources.md)
+* [Аутенфикация](docs_ru/general/authentication.md)
+  * [Получение ключа доступа пользователя](docs_ru/general/authentication_user.md)
+  * [Получение ключа доступа клиентского приложения](docs_ru/general/authentication_application.md)
+  * [Доступ к ресурсам](docs_ru/general/authentication_resources.md)
 
 <a name="resources" />
 ### Ресурсы
