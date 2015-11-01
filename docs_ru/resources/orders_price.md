@@ -1,6 +1,6 @@
-# Получение цены заказа
+# Создание заказа
 
-`GET https://api.vozovoz.ru/v1/orders/price`
+`GET https://vozovoz.ru/api/v1/orders/price`
 
 Параметры запроса:
 
