@@ -30,5 +30,5 @@ Vozovoz API представляет REST-интерфейс для взаимо
 * [Населенные пункты](docs_ru/resources/locations.md)
 * [Зоны доставки](docs_ru/resources/zones.md)
 * [Терминалы](docs_ru/resources/terminals.md)
-* [Контрагенты](docs_ru/resources/counteragent.md)
+* [Контрагенты](docs_ru/resources/counteragents.md)
 * [Расписание доставки](docs_ru/resources/timetables.md)
