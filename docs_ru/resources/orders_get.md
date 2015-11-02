@@ -7,7 +7,7 @@
 ```js
 HTTP/1.1 200 OK
 {
-    "data" : Order
+    "data" : <объект Order>
 }
 ```
 Order - [объект заказа](orders_object.md)
