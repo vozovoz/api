@@ -64,10 +64,7 @@ actions | [Order.Cost.Action](#service.cost.action) | Массив влияющ�
 --- | --- | --------
 id | string | Id услуги
 name | string | Название
-cost | object | Цена
-&nbsp; cost.base | &nbsp; number | &nbsp; Базовая
-&nbsp; cost.discount | &nbsp; number | &nbsp; Скидка
-&nbsp; cost.total | &nbsp; number | &nbsp; Итоговая цена (base + discount)
+cost | [Order.Cost](#service.cost) | Цена без полей `details` и `actions`
 
 #### Объект <a name="service.cost.action">`Order.Cost.Action`</a>
  
