@@ -57,6 +57,27 @@ total | number | Полная стоимость
 #### Объект <a name="service">`Order.Service`</a>
 
 В зависимости от типа услуги, объект тип Order.Service может содержать различные поля
+
+#### Объект <a name="service.cost">`Order.Service.Cost`</a>
+ 
+Имя | Тип | Описание
+--- | --- | ------
+base | number | Базовая цена услуги
+discount | number | Скидка
+total | number | Итоговая цена (base + discount)
+details | [object] | Массив ценообразующих услуг:
+&nbsp; details.id | &nbsp; string | &nbsp; Id услуги
+&nbsp; details.name  | &nbsp; string | &nbsp; Название компонента
+&nbsp; details.cost  | &nbsp; string | &nbsp; Название компонента
+actions | [object] | Полная стоимость
+
+#### Объект <a name="service.cost.detail">`Order.Service.Cost.Details`</a>
+ 
+Имя | Тип | Описание
+--- | --- | ------
+details.id | string | Id услуги
+details.name  | string | Название компонента
+details.cost  | string |Название компонента
  
 ##### Услуга «Межтерминальная доставка»
 
