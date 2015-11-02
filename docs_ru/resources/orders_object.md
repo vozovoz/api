@@ -78,11 +78,11 @@ name | string | Название
 Имя | Тип | Описание
 --- | --- | --------
 type | string | Тип груза
-units | [Order.Cargo.Units](#service.cargo.units) | Массив грузов (коробок)
-packages | [Order.Cargo.Packages](#service.cargo.packages) | Упаковка
+units | [Order.Cargo.Units](#cargo.units) | Массив грузов (коробок)
+packages | [Order.Cargo.Packages](#cargo.packages) | Упаковка
 hasCorrespondence | boolean | Корреспонденция
 declaredCost | number | Заявленная стоимость груза
-total | [Order.Cargo.Total](#service.cargo.total) | Суммарные параметры
+total | [Order.Cargo.Total](#cargo.total) | Суммарные параметры
 
 #### Объект <a name="cargo.units">`Order.Cargo.Units`</a>
  
