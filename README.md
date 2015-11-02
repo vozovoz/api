@@ -14,7 +14,7 @@ Vozovoz API представляет REST-интерфейс для взаимо
   * [Удаление объекта](docs_ru/general/resources_delete.md)
   * [Ошибки и коды ответов](docs_ru/general/resources_errors.md)
 * Аутенфикация
-  * [Получение ключа доступа клиентского приложения](docs_ru/general/authentication_application.md)
+  * [Получение ключа доступа](docs_ru/general/authentication_token.md)
   * [Доступ к ресурсам](docs_ru/general/authentication_resources.md)
 
 <a name="resources" />
