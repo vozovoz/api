@@ -34,4 +34,4 @@ HTTP/1.1 200 OK
 }
 ```
 
-Zone - [объект заказа](orders_object.md)
+Zone - [объект зоны](zones.md)
