@@ -48,15 +48,15 @@ arrivalTo | string | Нижняя граница по времени прибы�
 canBeCanceled | string | Заказ может быть отменен
 fields | boolean | Поля, доступные для редактирования
 
-#### Объект <a name="service.cost">`Order.Cost`</a>
+#### Объект <a name="cost">`Order.Cost`</a>
  
 Имя | Тип | Описание
 --- | --- | ------
 base | number | Базовая цена услуги
 discount | number | Скидка
 total | number | Итоговая цена (base + discount)
-details | [Order.Cost.Discount](#service.cost.details) | Массив ценообразующих компонентов
-actions | [Order.Cost.Action](#service.cost.action) | Массив влияющих на цену действий:
+details | [Order.Cost.Discount](#cost.details) | Массив ценообразующих компонентов
+actions | [Order.Cost.Action](#cost.action) | Массив влияющих на цену действий:
 
 #### Объект <a name="service.cost.details">`Order.Cost.Details`</a>
  
@@ -64,9 +64,9 @@ actions | [Order.Cost.Action](#service.cost.action) | Массив влияющ�
 --- | --- | --------
 id | string | Id услуги
 name | string | Название
-cost | [Order.Cost](#service.cost) | Цена без полей `details` и `actions`
+cost | [Order.Cost](#cost) | Цена без полей `details` и `actions`
 
-#### Объект <a name="service.cost.action">`Order.Cost.Action`</a>
+#### Объект <a name="cost.action">`Order.Cost.Action`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
