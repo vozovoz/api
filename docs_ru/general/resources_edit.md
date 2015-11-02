@@ -28,7 +28,7 @@ PATCH https://vozovoz.ru/api/v1/news/1
 ---
 
 ```js
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 {
     "data": {
         "id":          1,
