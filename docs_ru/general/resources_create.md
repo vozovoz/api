@@ -20,7 +20,6 @@ HTTP/1.1 201 Created
 
 ```
 POST https://vozovoz.ru/api/v1/news
-
 {
     "title":       "Новость 1",
     "description": "Краткое описание новости 1"
