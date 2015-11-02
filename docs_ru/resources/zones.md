@@ -16,7 +16,7 @@ mainLocation | object | Основной населенный пункт в зо
 defaults | object | Значения по умолчанию для зоны: `address`, `terminalId`
 conditions | object | Контактная информация: `phoneNumber`
 
-## Получение зон
+## Получение списка зон
 
 `GET https://vozovoz.ru/api/v1/cities`
 
