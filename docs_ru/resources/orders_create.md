@@ -107,7 +107,7 @@ Order - [объект заказа](orders_object.md)
 }
 ```
 
-LocationID для формирования объекта типа `Location` можно получить из ресурса Locations. TerminalID можно получить из ресурса `Terminals`.
+LocationID для формирования объекта типа Location можно получить из ресурса `Object.Locations`. TerminalID можно получить из ресурса `Terminals`.
 
 ---
 
