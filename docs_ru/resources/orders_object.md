@@ -87,8 +87,19 @@ sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 from | [Location](locations.md) | Место отправления
 to | [Location](locations.md) | Место получения
-cargo | [Order.Cargo](#cargo) | Груз
+cargo | [Order.Service.Cargo](#cargo) | Груз
 cost | [Order.Cost](#service.cost) | Стоимость услуги
+
+#### Объект <a name="service.cargo">`Order.Service.Cargo`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+type | string | Тип груза
+units | [Order.Service.Cargo.Units](#service.cargo.units) | Массив грузов (коробок)
+packages | [Order.Service.Cargo.Packages](#service.cargo.packages) | Упаковка
+hasCorrespondence | boolean | Корреспонденция
+declaredCost | number | Заявленная стоимость груза
+total | [Order.Service.Cargo.Total](#service.cargo.total) | Суммарные параметры
 
 ##### Услуга «Забор груза»
 
