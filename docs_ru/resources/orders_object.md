@@ -73,35 +73,18 @@ cost | [Order.Cost](#cost) | Цена без полей `details` и `actions`
 id | string | Идентификатор услуги
 name | string | Название
 
-#### Объект <a name="service">`Order.Service`</a>
-
-В зависимости от типа услуги объект Order.Service может содержать различные поля
-
-##### Услуга «Межтерминальная доставка»
-
-Имя | Тип | Описание | Значение
---- | --- | -------- | -------- 
-type | string | Тип услуги | "shipping"
-name | string | Название услуги
-sortIndex | number | Индекс сортировки |
-counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-from | [Location](locations.md) | Место отправления
-to | [Location](locations.md) | Место получения
-cargo | [Order.Service.Cargo](#cargo) | Груз
-cost | [Order.Cost](#service.cost) | Стоимость услуги
-
-#### Объект <a name="service.cargo">`Order.Service.Cargo`</a>
+#### Объект <a name="cargo">`Order.Cargo`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
 type | string | Тип груза
-units | [Order.Service.Cargo.Units](#service.cargo.units) | Массив грузов (коробок)
-packages | [Order.Service.Cargo.Packages](#service.cargo.packages) | Упаковка
+units | [Order.Cargo.Units](#service.cargo.units) | Массив грузов (коробок)
+packages | [Order.Cargo.Packages](#service.cargo.packages) | Упаковка
 hasCorrespondence | boolean | Корреспонденция
 declaredCost | number | Заявленная стоимость груза
-total | [Order.Service.Cargo.Total](#service.cargo.total) | Суммарные параметры
+total | [Order.Cargo.Total](#service.cargo.total) | Суммарные параметры
 
-#### Объект <a name="service.cargo">`Order.Service.Cargo.Units`</a>
+#### Объект <a name="cargo.units">`Order.Cargo.Units`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
@@ -112,7 +95,7 @@ volume | number | объем
 weight | number | вес
 quantity | number | количество
 
-#### Объект <a name="service.cargo">`Order.Service.Cargo.Packages`</a>
+#### Объект <a name="cargo.packages">`Order.Cargo.Packages`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
@@ -128,7 +111,7 @@ hardPackageVolume | number | жесткая упаковка (м³)
 extraPackageVolume | number | дополнительная упаковка (м³)
 bubbleFilmVolume | number | воздушно-пузырьковая пленка (м³)
 
-#### Объект <a name="service.cargo">`Order.Service.Cargo.Packages`</a>
+#### Объект <a name="cargo.all">`Order.Cargo.all`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
@@ -144,6 +127,23 @@ max | object | коробка 40x20x20 см (шт)
 &nbsp width | &nbsp number | &nbsp ширина
 &nbsp height | &nbsp number | &nbsp высота
 &nbsp weight | &nbsp number | &nbsp вес
+
+#### Объект <a name="service">`Order.Service`</a>
+
+В зависимости от типа услуги объект Order.Service может содержать различные поля
+
+##### Услуга «Межтерминальная доставка»
+
+Имя | Тип | Описание | Значение
+--- | --- | -------- | -------- 
+type | string | Тип услуги | "shipping"
+name | string | Название услуги
+sortIndex | number | Индекс сортировки |
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
+from | [Location](locations.md) | Место отправления
+to | [Location](locations.md) | Место получения
+cargo | [Order.Cargo](#cargo) | Груз
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Забор груза»
 
