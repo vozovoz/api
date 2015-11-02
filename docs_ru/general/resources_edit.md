@@ -2,7 +2,7 @@
 
 Для изменения объекта надо сделать PATCH-запрос к объекту ресурса, передавая необходимые параметры в теле запроса.
 
-`PATH https://vozovoz.ru/api/v1/[название ресурса]/[ID]`
+`PATCH https://vozovoz.ru/api/v1/[название ресурса]/[ID]`
 
 Обязательный заголовок:
 `Content-Type: application/json; charset=utf-8`
@@ -13,5 +13,27 @@
 HTTP/1.1 200 OK
 {
     "data": [объект]
+}
+```
+
+**Пример**
+
+```
+PATCH https://vozovoz.ru/api/v1/news/1
+{
+    "description": "Новое краткое описание новости 1"
+}
+```
+
+---
+
+```js
+HTTP/1.1 201 Created
+{
+    "data": {
+        "id":          1,
+        "title":       "Новость 1",
+        "description": "Новое краткое описание новости 1"
+    }
 }
 ```
