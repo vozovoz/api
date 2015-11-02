@@ -65,19 +65,26 @@ total | number | Полная стоимость
 base | number | Базовая цена услуги
 discount | number | Скидка
 total | number | Итоговая цена (base + discount)
-details | [object] | Массив ценообразующих услуг:
-&nbsp; details.id | &nbsp; string | &nbsp; Id услуги
-&nbsp; details.name  | &nbsp; string | &nbsp; Название компонента
-&nbsp; details.cost  | &nbsp; string | &nbsp; Название компонента
-actions | [object] | Полная стоимость
+details | [Order.Service.Cost.Discount] | Массив ценообразующих компонентов
+actions | [Order.Service.Cost.Action] | Массив влияющих на цену действий:
 
-#### Объект <a name="service.cost.detail">`Order.Service.Cost.Details`</a>
+#### Объект <a name="service.cost.discount">`Order.Service.Cost.Discount`</a>
  
 Имя | Тип | Описание
---- | --- | ------
-details.id | string | Id услуги
-details.name  | string | Название компонента
-details.cost  | string |Название компонента
+--- | --- | --------
+id | string | Id услуги
+name | string | Название
+cost | object | Цена
+&nbsp; cost.base | &nbsp; number | &nbsp; Базовая
+&nbsp; cost.discount | &nbsp; number | &nbsp; Скидка
+&nbsp; cost.total | &nbsp; number | &nbsp; Итоговая цена (base + discount)
+
+#### Объект <a name="service.cost.action">`Order.Service.Cost.Action`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+id | string | Id услуги
+name | string | Название
  
 ##### Услуга «Межтерминальная доставка»
 
