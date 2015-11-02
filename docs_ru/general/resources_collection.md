@@ -49,9 +49,9 @@ HTTP/1.1 200 OK
         }
     ],
     "meta": {
-        "limit": 20,
+        "limit":  20,
         "offset": 0,
-        "total": 67
+        "total":  67
     }
 }
 ```
