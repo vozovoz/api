@@ -1,21 +1,3 @@
-# Изменение объекта
-
-Для изменения объекта надо сделать PUT-запрос к объекту ресурса, передавая необходимые параметры в теле запроса.
-
-`PUT https://vozovoz.ru/api/v1/[название ресурса]/[ID]`
-
-Обязательный заголовок:
-`Content-Type: application/x-www-form-urlencoded;charset=UTF-8`
-
----
-
-```js
-HTTP/1.1 200 OK
-{
-    "data": [объект]
-}
-```
-
 # Частичное изменение объекта
 
 Для изменения объекта надо сделать PATCH-запрос к объекту ресурса, передавая необходимые параметры в теле запроса.
@@ -23,7 +5,7 @@ HTTP/1.1 200 OK
 `PATH https://vozovoz.ru/api/v1/[название ресурса]/[ID]`
 
 Обязательный заголовок:
-`Content-Type: application/x-www-form-urlencoded;charset=UTF-8`
+`Content-Type: application/json; charset=utf-8`
 
 ---
 
