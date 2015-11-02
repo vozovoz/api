@@ -87,34 +87,34 @@ total | [Order.Cargo.Total](#cargo.total) | Суммарные параметр�
  
 Имя | Тип | Описание
 --- | --- | --------
-bag1 | integer | Мешок 55×105 см (шт)
-bag2 | integer | Мешок 70×120 см (шт)
-box1 | integer | Коробка 40×20×20 см (шт)
-box2 | integer | Коробка 40×40×20 см (шт)
-box3 | integer | Коробка 40×40×40 см (шт)
-box4 | integer | Коробка 80×40×40 см (шт)
-sealPackage | integer | Пломбирование
-safePackage | integer | Сейф-пакет (шт)
-hardPackageVolume | number | Жесткая упаковка (м³)
-extraPackageVolume | number | Дополнительная упаковка (м³)
-bubbleFilmVolume | number | Воздушно-пузырьковая пленка (м³)
+bag1 | integer | Мешок 55×105 см, шт.
+bag2 | integer | Мешок 70×120 см, шт.
+box1 | integer | Коробка 40×20×20 см, шт.
+box2 | integer | Коробка 40×40×20 см, шт.
+box3 | integer | Коробка 40×40×40 см, шт.
+box4 | integer | Коробка 80×40×40 см, шт.
+sealPackage | integer | Пломбирование, шт.
+safePackage | integer | Сейф-пакет, шт.
+hardPackageVolume | number | Жесткая упаковка, м³
+extraPackageVolume | number | Дополнительная упаковка, м³
+bubbleFilmVolume | number | Воздушно-пузырьковая пленка, м³
 
 #### Объект <a name="cargo.all">`Order.Cargo.all`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
 all | object | Общие:
-&nbsp; volume | &nbsp; number | &nbsp; Объем
-&nbsp; weight | &nbsp; number | &nbsp; Вес
-&nbsp; quantity | &nbsp; number | &nbsp; Количество
+&nbsp; volume | &nbsp; number | &nbsp; Объем, м³
+&nbsp; weight | &nbsp; number | &nbsp; Вес, кг
+&nbsp; quantity | &nbsp; integer | &nbsp; Количество, шт.
 noGab | object | Негабарит:
-&nbsp; volume | &nbsp; number | &nbsp; Объем
-&nbsp; weight | &nbsp; number | &nbsp; Вес
+&nbsp; volume | &nbsp; number | &nbsp; Объем, м³
+&nbsp; weight | &nbsp; number | &nbsp; Вес, кг
 max | object | Максимальные:
-&nbsp; length | &nbsp; number | &nbsp; Длина
-&nbsp; width | &nbsp; number | &nbsp; Ширина
-&nbsp; height | &nbsp; number | &nbsp; Высота
-&nbsp; weight | &nbsp; number | &nbsp; Вес
+&nbsp; length | &nbsp; number | &nbsp; Длина, м
+&nbsp; width | &nbsp; number | &nbsp; Ширина, м
+&nbsp; height | &nbsp; number | &nbsp; Высота, м
+&nbsp; weight | &nbsp; number | &nbsp; Вес, кг
 
 #### Объект <a name="service">`Order.Service`</a>
 
