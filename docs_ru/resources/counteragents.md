@@ -14,7 +14,7 @@ consignee | [Counteragent](#counteragent) |Получатель
 
 Имя | Тип | Описание | значение
 --- | --- | -------- | --------
-id | string | counteragentID
+id | string | counteragentId
 type | string | тип | "individual"
 fullName | string | ФИО
 phoneNumbers | [string] | Массив телефонных номеров. Первый номер — основной
@@ -24,7 +24,7 @@ email | string | Электронная почта
 
 Имя | Тип | Описание | значение
 --- | --- | -------- | --------
-id | string | counteragentID
+id | string | counteragentId
 type | string | тип | "corporation"
 inn | string | ИНН
 kpp | string | КПП
