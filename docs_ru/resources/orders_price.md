@@ -63,7 +63,7 @@ Order - [объект заказа](orders_object.md), ограниченный 
        {
            "type": "deliveryTo",
            "to": { //До адреса
-               "id": "e90f1820-0128-11e5-80c7-00155d903d03", // locationID
+               "id": "e90f1820-0128-11e5-80c7-00155d903d03", //locationID
                "address": {
                    "address": "Варшавское шоссе, д, 1",
                    "dates": {
