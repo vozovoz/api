@@ -15,3 +15,23 @@ regionalCenterId | string | ID регионального центра
 mainLocation | object | Основной населенный пункт в зоне: `id`
 defaults | object | Значения по умолчанию для зоны: `address`, `terminalId`
 conditions | object | Контактная информация: `phoneNumber`
+
+## Получение зон
+
+`GET https://vozovoz.ru/api/v1/cities`
+
+---
+
+```js
+HTTP/1.1 200 OK
+{
+    "data" : [объект Zone],
+    "meta" : {
+        "limit" : [количество объектов],
+        "offset": [начальная позиция],
+        "total" : [общее количество объектов]
+    }
+}
+```
+
+Zone - [объект заказа](orders_object.md)
