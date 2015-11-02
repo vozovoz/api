@@ -8,7 +8,6 @@
 --- | --- | ---
 services | [[Order.Service](orders_object.md#service)] | Услуги, участвующие в заказе
 promoCode | string | Промокод
-save | [Order.Status](#status) | Сохранять расчет
 
 ---
 
