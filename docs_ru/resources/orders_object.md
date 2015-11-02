@@ -116,17 +116,17 @@ bubbleFilmVolume | number | воздушно-пузырьковая пленка
 Имя | Тип | Описание
 --- | --- | --------
 all | object | общие
-&nbsp volume | &nbsp number | &nbsp объем
-&nbsp weight | &nbsp number | &nbsp вес
-&nbsp quantity | &nbsp number | &nbsp количество
+&nbsp; volume | &nbsp; number | &nbsp; объем
+&nbsp; weight | &nbsp; number | &nbsp; вес
+&nbsp; quantity | &nbsp; number | &nbsp; количество
 noGab | object | негабарит
-&nbsp volume | &nbsp number | &nbsp объем
-&nbsp weight | &nbsp number | &nbsp вес
+&nbsp; volume | &nbsp; number | &nbsp; объем
+&nbsp; weight | &nbsp; number | &nbsp; вес
 max | object | коробка 40x20x20 см (шт)
-&nbsp length | &nbsp number | &nbsp длина
-&nbsp width | &nbsp number | &nbsp ширина
-&nbsp height | &nbsp number | &nbsp высота
-&nbsp weight | &nbsp number | &nbsp вес
+&nbsp; length | &nbsp; number | &nbsp; длина
+&nbsp; width | &nbsp; number | &nbsp; ширина
+&nbsp; height | &nbsp; number | &nbsp; высота
+&nbsp; weight | &nbsp; number | &nbsp; вес
 
 #### Объект <a name="service">`Order.Service`</a>
 
