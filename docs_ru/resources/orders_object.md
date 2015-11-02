@@ -124,9 +124,26 @@ box3 | integer | коробка 40x40x40 см (шт)
 box4 | integer | коробка 80x40x40 см (шт)
 sealPackage | integer | пломбирование
 safePackage | integer | сейф-пакет (шт)
-hardPackageVolume | number | жесткая упаковка (м3)
-extraPackageVolume | number | дополнительная упаковка (м3)
-bubbleFilmVolume | number | воздушно-пузырьковая пленка (м3)
+hardPackageVolume | number | жесткая упаковка (м³)
+extraPackageVolume | number | дополнительная упаковка (м³)
+bubbleFilmVolume | number | воздушно-пузырьковая пленка (м³)
+
+#### Объект <a name="service.cargo">`Order.Service.Cargo.Packages`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+all | object | общие
+&nbsp volume | &nbsp number | &nbsp объем
+&nbsp weight | &nbsp number | &nbsp вес
+&nbsp quantity | &nbsp number | &nbsp количество
+noGab | object | негабарит
+&nbsp volume | &nbsp number | &nbsp объем
+&nbsp weight | &nbsp number | &nbsp вес
+max | object | коробка 40x20x20 см (шт)
+&nbsp length | &nbsp number | &nbsp длина
+&nbsp width | &nbsp number | &nbsp ширина
+&nbsp height | &nbsp number | &nbsp высота
+&nbsp weight | &nbsp number | &nbsp вес
 
 ##### Услуга «Забор груза»
 
