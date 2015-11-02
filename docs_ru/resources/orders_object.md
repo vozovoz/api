@@ -101,6 +101,33 @@ hasCorrespondence | boolean | Корреспонденция
 declaredCost | number | Заявленная стоимость груза
 total | [Order.Service.Cargo.Total](#service.cargo.total) | Суммарные параметры
 
+#### Объект <a name="service.cargo">`Order.Service.Cargo.Units`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+length | number | длина
+width | number | ширина
+height | number | высота
+volume | number | объем
+weight | number | вес
+quantity | number | количество
+
+#### Объект <a name="service.cargo">`Order.Service.Cargo.Packages`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+bag1 | number | мешок 55x105 см (шт)
+bag2 | number | мешок 70x120 см (шт)
+box1 | number | коробка 40x20x20 см (шт)
+box2 | number | коробка 40x40x20 см (шт)
+box3 | number | коробка 40x40x40 см (шт)
+box4 | number | коробка 80x40x40 см (шт)
+sealPackage | number | пломбирование (boolean)
+safePackage | number | сейф-пакет (шт)
+hardPackageVolume | number | жесткая упаковка (м3)
+extraPackageVolume | number | дополнительная упаковка (м3)
+bubbleFilmVolume | number | воздушно-пузырьковая пленка (м3)
+
 ##### Услуга «Забор груза»
 
 Имя | Тип | Описание | Значение
