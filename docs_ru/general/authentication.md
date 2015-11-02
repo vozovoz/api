@@ -1,7 +1,7 @@
 # Аутенфикация
 
 Аутенфикация владельцев ресурса (пользователей Возовоза) производится по протоколу OAuth 2.0 способом,
-описанном в спецификации под названием «[Resource Owner Password Credentials](http://tools.ietf.org/html/draft-ietf-oauth-v2-21#section-4.3)».
+описанном в спецификации под названием [Resource Owner Password Credentials](http://tools.ietf.org/html/draft-ietf-oauth-v2-21#section-4.3).
 
 Для аутенфикации пользователя требуется получить ключ доступа `access_token` у сервера авторизации и передать его ресурсу. Когда ключ доступа устаревает, его необходимо обновить используя ключ обновления `refresh_token`.
 
