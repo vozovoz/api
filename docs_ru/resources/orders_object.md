@@ -9,7 +9,7 @@ status | [Order.Status](#status) | Статус заказа
 organization | [Order.Organization](#organization) | Организация, осуществляющая перевозку
 dates | [Order.Dates](#dates) | Даты создания/обновления заказа
 editing | [Order.Editing](#editing) | Конфигурация редактирования заказа
-cost | [Order.Cost](#cost) | Стоимость
+cost | [Order.Cost](#cost) | Стоимость (только поле total)
 services | [[Order.Service](#service)] | Массив услуг
  
  
@@ -29,7 +29,7 @@ canUserRequestDriverCallback | boolean | Возможность запроса �
  
 Имя | Тип | Описание
 --- | --- | ------
-id | string | organizationID
+id | string | Идентификатор организации
 name | string | Название
 
 #### Объект <a name="dates">`Order.Dates`</a>
@@ -52,12 +52,86 @@ fields | boolean | Поля, доступные для редактирован�
  
 Имя | Тип | Описание
 --- | --- | ------
-total | number | Полная стоимость
+base | number | Базовая цена услуги
+discount | number | Скидка
+total | number | Итоговая цена (base + discount)
+details | [Order.Cost.Discount](#cost.details) | Массив ценообразующих компонентов
+actions | [Order.Cost.Action](#cost.action) | Массив влияющих на цену действий
+
+#### Объект <a name="service.cost.details">`Order.Cost.Details`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+id | string | Идентификатор услуги
+name | string | Название
+cost | [Order.Cost](#cost) | Цена без полей `details` и `actions`
+
+#### Объект <a name="cost.action">`Order.Cost.Action`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+id | string | Идентификатор услуги
+name | string | Название
+
+#### Объект <a name="cargo">`Order.Cargo`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+type | string | Тип груза
+units | [Order.Cargo.Units](#cargo.units) | Массив грузов (коробок)
+packages | [Order.Cargo.Packages](#cargo.packages) | Упаковка
+hasCorrespondence | boolean | Корреспонденция
+declaredCost | number | Заявленная стоимость груза
+total | [Order.Cargo.Total](#cargo.total) | Суммарные параметры
+
+#### Объект <a name="cargo.units">`Order.Cargo.Units`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+length | number | Длина
+width | number | Ширина
+height | number | Высота
+volume | number | Объем
+weight | number | Вес
+quantity | number | Количество
+
+#### Объект <a name="cargo.packages">`Order.Cargo.Packages`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+bag1 | integer | Мешок 55×105 см (шт)
+bag2 | integer | Мешок 70×120 см (шт)
+box1 | integer | Коробка 40×20×20 см (шт)
+box2 | integer | Коробка 40×40×20 см (шт)
+box3 | integer | Коробка 40×40×40 см (шт)
+box4 | integer | Коробка 80×40×40 см (шт)
+sealPackage | integer | Пломбирование
+safePackage | integer | Сейф-пакет (шт)
+hardPackageVolume | number | Жесткая упаковка (м³)
+extraPackageVolume | number | Дополнительная упаковка (м³)
+bubbleFilmVolume | number | Воздушно-пузырьковая пленка (м³)
+
+#### Объект <a name="cargo.all">`Order.Cargo.all`</a>
+ 
+Имя | Тип | Описание
+--- | --- | --------
+all | object | Общие:
+&nbsp; volume | &nbsp; number | &nbsp; Объем
+&nbsp; weight | &nbsp; number | &nbsp; Вес
+&nbsp; quantity | &nbsp; number | &nbsp; Количество
+noGab | object | Негабарит:
+&nbsp; volume | &nbsp; number | &nbsp; Объем
+&nbsp; weight | &nbsp; number | &nbsp; Вес
+max | object | Максимальные:
+&nbsp; length | &nbsp; number | &nbsp; Длина
+&nbsp; width | &nbsp; number | &nbsp; Ширина
+&nbsp; height | &nbsp; number | &nbsp; Высота
+&nbsp; weight | &nbsp; number | &nbsp; Вес
 
 #### Объект <a name="service">`Order.Service`</a>
 
-В зависимости от типа услуги, объект тип Order.Service может содержать различные поля
- 
+В зависимости от типа услуги объект Order.Service может содержать различные поля
+
 ##### Услуга «Межтерминальная доставка»
 
 Имя | Тип | Описание | Значение
@@ -69,7 +143,7 @@ counteragents | [Counteragents](counteragents.md) | Контрагенты, уч
 from | [Location](locations.md) | Место отправления
 to | [Location](locations.md) | Место получения
 cargo | [Order.Cargo](#cargo) | Груз
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Забор груза»
 
@@ -80,7 +154,7 @@ name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 from | [Location](locations.md) | Место забора груза
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Отвоз груза»
 
@@ -91,7 +165,7 @@ name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 to | [Location](locations.md) | Место отвоза груза
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Ответственное хранение»
 
@@ -103,7 +177,7 @@ sortIndex | number | Индекс сортировки
 dates | object | Даты:
 &nbsp; dates.from |&nbsp;  object |&nbsp;  начало начисления платы за хранение
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Сбор за ценность груза»
 
@@ -113,7 +187,7 @@ type | string | Тип услуги | ""
 name | string | Название услуги
 sortIndex | number | Индекс сортировки
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Возврат сопроводительных документов»
 
@@ -123,4 +197,4 @@ type | string | Тип услуги | "returnOfSupportingDocuments"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
