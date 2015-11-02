@@ -9,7 +9,7 @@ status | [Order.Status](#status) | Статус заказа
 organization | [Order.Organization](#organization) | Организация, осуществляющая перевозку
 dates | [Order.Dates](#dates) | Даты создания/обновления заказа
 editing | [Order.Editing](#editing) | Конфигурация редактирования заказа
-cost | [Order.Cost](#cost) | Стоимость
+cost | [Order.Cost](#cost) | Стоимость (только поле total)
 services | [[Order.Service](#service)] | Массив услуг
  
  
@@ -48,27 +48,17 @@ arrivalTo | string | Нижняя граница по времени прибы�
 canBeCanceled | string | Заказ может быть отменен
 fields | boolean | Поля, доступные для редактирования
 
-#### Объект <a name="cost">`Order.Cost`</a>
- 
-Имя | Тип | Описание
---- | --- | ------
-total | number | Полная стоимость
-
-#### Объект <a name="service">`Order.Service`</a>
-
-В зависимости от типа услуги, объект тип Order.Service может содержать различные поля
-
-#### Объект <a name="service.cost">`Order.Service.Cost`</a>
+#### Объект <a name="service.cost">`Order.Cost`</a>
  
 Имя | Тип | Описание
 --- | --- | ------
 base | number | Базовая цена услуги
 discount | number | Скидка
 total | number | Итоговая цена (base + discount)
-details | [Order.Service.Cost.Discount](#service.cost.details) | Массив ценообразующих компонентов
-actions | [Order.Service.Cost.Action](#service.cost.action) | Массив влияющих на цену действий:
+details | [Order.Cost.Discount](#service.cost.details) | Массив ценообразующих компонентов
+actions | [Order.Cost.Action](#service.cost.action) | Массив влияющих на цену действий:
 
-#### Объект <a name="service.cost.details">`Order.Service.Cost.Details`</a>
+#### Объект <a name="service.cost.details">`Order.Cost.Details`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
@@ -79,13 +69,17 @@ cost | object | Цена
 &nbsp; cost.discount | &nbsp; number | &nbsp; Скидка
 &nbsp; cost.total | &nbsp; number | &nbsp; Итоговая цена (base + discount)
 
-#### Объект <a name="service.cost.action">`Order.Service.Cost.Action`</a>
+#### Объект <a name="service.cost.action">`Order.Cost.Action`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
 id | string | Id услуги
 name | string | Название
- 
+
+#### Объект <a name="service">`Order.Service`</a>
+
+В зависимости от типа услуги, объект тип Order.Service может содержать различные поля
+
 ##### Услуга «Межтерминальная доставка»
 
 Имя | Тип | Описание | Значение
@@ -97,7 +91,7 @@ counteragents | [Counteragents](counteragents.md) | Контрагенты, уч
 from | [Location](locations.md) | Место отправления
 to | [Location](locations.md) | Место получения
 cargo | [Order.Cargo](#cargo) | Груз
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Забор груза»
 
@@ -108,7 +102,7 @@ name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 from | [Location](locations.md) | Место забора груза
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Отвоз груза»
 
@@ -119,7 +113,7 @@ name | string | Название услуги
 sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 to | [Location](locations.md) | Место отвоза груза
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Ответственное хранение»
 
@@ -131,7 +125,7 @@ sortIndex | number | Индекс сортировки
 dates | object | Даты:
 &nbsp; dates.from |&nbsp;  object |&nbsp;  начало начисления платы за хранение
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Сбор за ценность груза»
 
@@ -141,7 +135,7 @@ type | string | Тип услуги | ""
 name | string | Название услуги
 sortIndex | number | Индекс сортировки
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Возврат сопроводительных документов»
 
@@ -151,4 +145,4 @@ type | string | Тип услуги | "returnOfSupportingDocuments"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-cost | [Order.Service.Cost](#service.cost) | Стоимость услуги
+cost | [Order.Cost](#service.cost) | Стоимость услуги
