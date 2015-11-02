@@ -65,10 +65,10 @@ total | number | Полная стоимость
 base | number | Базовая цена услуги
 discount | number | Скидка
 total | number | Итоговая цена (base + discount)
-details | [Order.Service.Cost.Discount] | Массив ценообразующих компонентов
-actions | [Order.Service.Cost.Action] | Массив влияющих на цену действий:
+details | [Order.Service.Cost.Discount](#service.cost.details) | Массив ценообразующих компонентов
+actions | [Order.Service.Cost.Action](#service.cost.action) | Массив влияющих на цену действий:
 
-#### Объект <a name="service.cost.discount">`Order.Service.Cost.Discount`</a>
+#### Объект <a name="service.cost.details">`Order.Service.Cost.Details`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
