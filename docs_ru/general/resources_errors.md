@@ -13,8 +13,8 @@ HTTP/1.1 400 Bad Request
   "fields": {
     "from": {
       "address": {
-        "error": "incorrectAddress", // обязательно
-        "message": "<Доставка на этот адрес недоступна>", // обязательно
+        "error":       "incorrectAddress", // обязательно
+        "message":     "<Доставка на этот адрес недоступна>", // обязательно
         "description": "<Длинный текст ошибки>"
       }
     }
