@@ -163,7 +163,7 @@ type | string | Тип услуги | "paidStoring"
 name | string | Название услуги
 sortIndex | number | Индекс сортировки
 dates | object | Даты:
-&nbsp; dates.from |&nbsp;  object |&nbsp;  начало начисления платы за хранение
+&nbsp; dates.from |&nbsp;  string |&nbsp;  начало начисления платы за хранение
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
