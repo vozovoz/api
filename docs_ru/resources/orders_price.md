@@ -182,11 +182,6 @@ Order - часть [объекта заказа](orders_object.md) с полям
        ],
        "cost": {
            "total": 650
-       },
-       "balance": [],
-       "editing": {
-           "canBeCanceled": true,
-           "services": true
        }
    }
 }
