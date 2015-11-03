@@ -76,7 +76,7 @@ Order - часть [объекта заказа](orders_object.md) с полям
 }
 ```
 
-`locationId` для формирования объекта типа `Order.Location` можно получить из ресурса `Locations`. `TerminalId` можно получить из ресурса `Terminals`.
+`locationId` для формирования объекта типа `Order.Location` можно получить из ресурса [Locations](locations.md). `TerminalId` можно получить из ресурса [Terminals](terminals.md).
 
 ---
 
