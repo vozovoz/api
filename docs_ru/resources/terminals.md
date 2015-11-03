@@ -39,4 +39,4 @@ HTTP/1.1 200 OK
 }
 ```
 
-Terminal - [объект терминала](terminals.md)
+Terminal — [объект терминала](terminals.md)
