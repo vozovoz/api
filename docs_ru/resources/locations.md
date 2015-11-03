@@ -25,8 +25,8 @@ terminal | [Location.Terminal](#terminal) | Терминал
 --- | --- | --------
 address | string | Идентификатор населенного пункта
 dates | object | Дата и время относительно часового пояса населенного пункта:
-&nbsp; dates.from | &nbsp; string | &nbsp; начальная дата
-&nbsp; dates.to | &nbsp; string | &nbsp; конечная дата
+&nbsp; dates.from | &nbsp; [Date](resources.md#format) | &nbsp; начальная дата
+&nbsp; dates.to | &nbsp; [Date](resources.md#format) | &nbsp; конечная дата
 floor | number | Этаж
 needWork | boolean | Погрузочно/разгузочные работы
 hasLift | boolean | Грузовой лифт
@@ -38,8 +38,8 @@ hasLift | boolean | Грузовой лифт
 id | string | terminalId
 address | string | Адрес терминала
 dates | object | Дата и время относительно часового пояса населенного пункта:
-&nbsp; dates.from | &nbsp; string | &nbsp; отправление
-&nbsp; dates.to | &nbsp; string | &nbsp; прибытие
+&nbsp; dates.from | &nbsp; [Date](resources.md#format) | &nbsp; отправление
+&nbsp; dates.to | &nbsp; [Date](resources.md#format) | &nbsp; прибытие
 
 ## Получение списка населенных пунктов
 
