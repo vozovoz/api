@@ -4,10 +4,10 @@
 
 Параметры запроса:
 
-Имя | Тип | Описание
---- | --- | ---
-services | [[Order.Service](orders_object.md#service)] | Услуги, участвующие в заказе
-promoCode | string | Промокод
+Имя | Тип | Обязательное | Описание
+--- | --- | ------------ | --------
+services | [[Order.Service](orders_object.md#service)] | да | Услуги, участвующие в заказе
+promoCode | string | нет | Промокод
 
 ---
 
