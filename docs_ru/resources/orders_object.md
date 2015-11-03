@@ -99,7 +99,7 @@ hardPackageVolume | number | Жесткая упаковка, м³
 extraPackageVolume | number | Дополнительная упаковка, м³
 bubbleFilmVolume | number | Воздушно-пузырьковая пленка, м³
 
-#### Объект <a name="cargo.all">`Order.Cargo.all`</a>
+#### Объект <a name="cargo.total">`Order.Cargo.Total`</a>
  
 Имя | Тип | Описание
 --- | --- | --------
