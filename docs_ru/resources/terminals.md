@@ -4,7 +4,7 @@
 
 Имя | Тип | Описание
 --- | --- | --------
-id | string | Идентификатор
+id | string | Идентификатор терминала
 type | string | Тип
 name | string | Название
 address | string | Адрес
