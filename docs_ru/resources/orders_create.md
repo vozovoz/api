@@ -18,7 +18,7 @@ HTTP/1.1 201 Created
 }
 ```
 
-Order - [объект заказа](orders_object.md)
+Order — [объект заказа](orders_object.md)
 
 **Создание заказа**
 
