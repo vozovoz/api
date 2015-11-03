@@ -47,7 +47,7 @@ to | object | да | Место получения: `locationId` — идент�
 HTTP/1.1 200 OK
 {
   "data": {
-    "locationId": "f2a30387-0124-11e5-80c7-00155d903d03",// terminalId
+    "locationId": "f2a30387-0124-11e5-80c7-00155d903d03", // terminalId
     "dates": [
       {
         "from": "2015-10-28T13:44:17Z",
