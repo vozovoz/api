@@ -4,12 +4,12 @@
 
 Имя | Тип | Описание
 --- | --- | --------
-id | string | terminalId
+id | string | Идентификатор
 type | string | Тип
 name | string | Название
 address | string | Адрес
 urlName | string | Название для URL-сегмента в адресной строке
-timezone | number | Часовой пояс UTC
+timezone | number | Смещение относительно UTC
 note | string | Примечание
 subway | string | Станция метро
 position | object | Расположение населенного пункта: `type` - тип расположения на карте (например «point»), `coordinates` - массив координат [долгота, широта]
