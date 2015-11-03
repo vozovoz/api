@@ -20,4 +20,4 @@ HTTP/1.1 200 OK
 }
 ```
 
-Order - [объект заказа](orders_object.md), ограниченный полями `balance`, `cost`, `editing`, `services`
+Order — [объект заказа](orders_object.md), ограниченный полями `balance`, `cost`, `editing`, `services`
