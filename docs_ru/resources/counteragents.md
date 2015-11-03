@@ -2,8 +2,8 @@
 
 ## Объект `Counteragents`
 
-Имя | Тип | Описание | значение
---- | --- | -------- | --------
+Имя | Тип | Описание
+--- | --- | --------
 payer | [Counteragent](#counteragent) |Плательщик
 shipper | [Counteragent](#counteragent) |Отправитель
 consignee | [Counteragent](#counteragent) |Получатель
@@ -14,22 +14,22 @@ consignee | [Counteragent](#counteragent) |Получатель
 
 Имя | Тип | Описание | значение
 --- | --- | -------- | --------
-id | string | counteragentId
+id | string | Идентификатор контрагента
 type | string | тип | "individual"
 fullName | string | ФИО
-phoneNumbers | [string] | Массив телефонных номеров. Первый номер — основной
+phoneNumbers | [string] | Массив телефонных номеров. Первый номер основной
 email | string | Электронная почта
 
 #### Юридическое лицо
 
 Имя | Тип | Описание | значение
 --- | --- | -------- | --------
-id | string | counteragentId
+id | string | Идентификатор контрагента
 type | string | тип | "corporation"
 inn | string | ИНН
 kpp | string | КПП
 name | string | Наименование
 contactFullName | string | ФИО контактного лица
 legalAddress | string | Юридический адрес
-phoneNumbers | [string] | Массив телефонных номеров. Первый номер — основной
+phoneNumbers | [string] | Массив телефонных номеров. Первый номер основной
 email | string | Электронная почта
