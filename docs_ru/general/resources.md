@@ -6,22 +6,22 @@
 
 HTTP-метод запроса определяет способ взаимодействия:
 
-* GET - получить данные из ресурса
-* POST - добавить данные в ресурс
-* PATCH - изменить указанные данные в ресурсе (частичное обновление)
-* DELETE - удалить данные из ресурса
+* GET — получить данные из ресурса
+* POST — добавить данные в ресурс
+* PATCH — изменить указанные данные в ресурсе (частичное обновление)
+* DELETE — удалить данные из ресурса
 
 Пример взаимодействия с ресурсом новостей:
 
-* `GET https://vozovoz.ru/api/v1/news` - получить список новостей
-* `POST https://vozovoz.ru/api/v1/news` - создать новость
-* `GET https://vozovoz.ru/api/v1/news/[ID]` - получить новость
-* `PATCH https://vozovoz.ru/api/v1/news/[ID]` - редактировать новость
-* `DELETE https://vozovoz.ru/api/v1/news/[ID]` - удалить новость
+* `GET https://vozovoz.ru/api/v1/news` — получить список новостей
+* `POST https://vozovoz.ru/api/v1/news` — создать новость
+* `GET https://vozovoz.ru/api/v1/news/[ID]` — получить новость
+* `PATCH https://vozovoz.ru/api/v1/news/[ID]` — редактировать новость
+* `DELETE https://vozovoz.ru/api/v1/news/[ID]` — удалить новость
 
 Ресурсы могут содержать вложенные ресурсы:
 
-`GET https://api.vozovoz.ru/v1/orders/[ID]/documents` - получить документы заказа
+`GET https://api.vozovoz.ru/v1/orders/[ID]/documents` — получить документы заказа
 
 #### <a name="format"></a>Форматы данных
 
