@@ -126,7 +126,6 @@ max | object | Максимальные:
 --- | --- | -------- | -------- 
 type | string | Тип услуги | "shipping"
 name | string | Название услуги
-sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) |Контрагенты, участвующие в заказе
 from | [Location](locations.md) | Место отправления
 to | [Location](locations.md) | Место получения (терминал)
@@ -139,7 +138,6 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 --- | --- | -------- | -------- 
 type | string | Тип услуги | "deliveryFrom"
 name | string | Название услуги
-sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 from | [Location](locations.md) | Место забора груза
 cost | [Order.Cost](#service.cost) | Стоимость услуги
@@ -150,7 +148,6 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 --- | --- | -------- | -------- 
 type | string | Тип услуги | "deliveryTo"
 name | string | Название услуги
-sortIndex | number | Индекс сортировки |
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 to | [Location](locations.md) | Место отвоза груза
 cost | [Order.Cost](#service.cost) | Стоимость услуги
@@ -161,7 +158,6 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 --- | --- | -------- | -------- 
 type | string | Тип услуги | "paidStoring"
 name | string | Название услуги
-sortIndex | number | Индекс сортировки
 dates | object | Даты:
 &nbsp; dates.from |&nbsp;  string |&nbsp;  начало начисления платы за хранение
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
@@ -173,6 +169,5 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 --- | --- | -------- | -------- 
 type | string | Тип услуги | "returnOfSupportingDocuments"
 name | string | Название услуги
-sortIndex | number | Индекс сортировки
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Cost](#service.cost) | Стоимость услуги
