@@ -29,10 +29,10 @@ Order - часть [объекта заказа](orders_object.md) с полям
    "services": [
        {
            "type": "shipping",
-           "from": { //От терминала
-               "id": "e90f19de-0128-11e5-80c7-00155d903d03", //locationId
+           "from": { // От терминала
+               "id": "e90f19de-0128-11e5-80c7-00155d903d03", // locationId
                "terminal": {
-                   "id": "d01da881-f94a-11e4-80c7-00155d903d03" //terminalId
+                   "id": "d01da881-f94a-11e4-80c7-00155d903d03" // terminalId
                }
            },
            "cargo": {
@@ -61,8 +61,8 @@ Order - часть [объекта заказа](orders_object.md) с полям
        },
        {
            "type": "deliveryTo",
-           "to": { //До адреса
-               "id": "e90f1820-0128-11e5-80c7-00155d903d03", //locationId
+           "to": { // До адреса
+               "id": "e90f1820-0128-11e5-80c7-00155d903d03", // locationId
                "address": {
                    "address": "Варшавское шоссе, д, 1",
                    "dates": {
@@ -76,7 +76,7 @@ Order - часть [объекта заказа](orders_object.md) с полям
 }
 ```
 
-`locationId` для формирования объекта типа `Order.Location` можно получить из ресурса [Locations](locations.md). `TerminalId` можно получить из ресурса [Terminals](terminals.md).
+`locationId` для формирования объекта типа `Order.Location` можно получить из ресурса [Locations](locations.md). `terminalId` можно получить из ресурса [Terminals](terminals.md).
 
 ---
 
