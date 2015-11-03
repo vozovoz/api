@@ -18,7 +18,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-Order - [объект заказа](orders_object.md), ограниченный полями `balance`, `cost`, `editing`, `services`
+Order - часть [объекта заказа](orders_object.md) с полями `cost` и `services`
 
 **Пример**
 
