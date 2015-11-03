@@ -44,7 +44,7 @@ Location — [объект населенного пункта](locations.md)
 
 ## Получение списка населенных пунктов по названию
 
-`GET https://vozovoz.ru/api/v1/locations/autocomplete?query='<строка запроса>'`
+`GET https://vozovoz.ru/api/v1/locations/autocomplete?query=<строка запроса>`
 
 Параметры запроса:
 
