@@ -63,3 +63,19 @@ HTTP/1.1 200 OK
 ```
 
 Location — [объект населенного пункта](locations.md)
+
+## Получение населенного пункта
+
+`GET https://vozovoz.ru/api/v1/locations/<id>`
+
+---
+
+```js
+HTTP/1.1 200 OK
+{
+  "data": <объект Location>
+}
+
+```
+
+Location — [объект населенного пункта](locations.md)
