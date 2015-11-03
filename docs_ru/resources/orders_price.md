@@ -18,7 +18,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-Order - часть [объекта заказа](orders_object.md) с полями `cost` и `services`
+Order — часть [объекта заказа](orders_object.md) с полями `cost` и `services`
 
 **Пример**
 
