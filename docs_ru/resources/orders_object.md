@@ -122,16 +122,16 @@ max | object | Максимальные:
 
 ##### Услуга «Межтерминальная доставка»
 
-Имя | Тип | Описание | Значение
---- | --- | -------- | -------- 
-type | string | Тип услуги | "shipping"
-name | string | Название услуги
-sortIndex | number | Индекс сортировки |
-counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-from | [Location](locations.md) | Место отправления
-to | [Location](locations.md) | Место получения
-cargo | [Order.Cargo](#cargo) | Груз
-cost | [Order.Cost](#service.cost) | Стоимость услуги
+Имя | Тип | Обязательное | Описание | Значение
+--- | --- | ------------ | -------- | -------- 
+type | string | да | Тип услуги | "shipping"
+name | string | нет | Название услуги
+sortIndex | number | нет | Индекс сортировки |
+counteragents | [Counteragents](counteragents.md) | нет | Контрагенты, участвующие в заказе
+from | [Location](locations.md) | если забор с терминала | Место отправления
+to | [Location](locations.md) | если отвоз на терминал | Место получения (терминал)
+cargo | [Order.Cargo](#cargo) | да | Груз
+cost | [Order.Cost](#service.cost) | нет | Стоимость услуги
 
 ##### Услуга «Забор груза»
 
