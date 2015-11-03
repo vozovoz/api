@@ -1,6 +1,6 @@
 # Расчет цены
 
-`POST https://vozovoz.ru/api/v1/orders`
+`POST https://vozovoz.ru/api/v1/orders/price`
 
 Параметры запроса:
 
