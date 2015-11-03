@@ -1,6 +1,6 @@
 # Получение заказа
 
-`GET https://vozovoz.ru/api/v1/orders/[ID]`
+`GET https://vozovoz.ru/api/v1/orders/<id>`
 
 ---
 
