@@ -40,3 +40,18 @@ HTTP/1.1 200 OK
 ```
 
 Terminal — [объект терминала](terminals.md)
+
+## Получение терминала
+
+`GET https://vozovoz.ru/api/v1/terminals/<id>`
+
+---
+
+```js
+HTTP/1.1 200 OK
+{
+  "data": <объект Terminal>
+}
+```
+
+Terminal — [объект терминала](terminals.md)
