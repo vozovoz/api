@@ -25,8 +25,8 @@ conditions | object | Контактная информация: `phoneNumber`
 ```js
 HTTP/1.1 200 OK
 {
-    "data" : [<объект Zone>],
-    "meta" : <мета-информация>
+    "data": [<объект Zone>],
+    "meta": <мета-информация>
 }
 ```
 
