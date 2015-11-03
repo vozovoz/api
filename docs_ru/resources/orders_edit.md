@@ -1,6 +1,6 @@
 # Редактирование заказа
 
-`PATCH https://vozovoz.ru/api/v1/orders/[ID]`
+`PATCH https://vozovoz.ru/api/v1/orders/<id>`
 
 Параметры запроса:
 
