@@ -30,9 +30,9 @@ Order — [объект заказа](orders_object.md)
        {
            "type": "shipping",
            "from": {
-               "id": "e90f19de-0128-11e5-80c7-00155d903d03", //locationId
+               "id": "e90f19de-0128-11e5-80c7-00155d903d03", // locationId
                "terminal": {
-                   "id": "d01da881-f94a-11e4-80c7-00155d903d03", //terminalId
+                   "id": "d01da881-f94a-11e4-80c7-00155d903d03", // terminalId
                    "dates": {
                        "from":"2015-10-28T14:00:00.000Z"
                    }
@@ -91,7 +91,7 @@ Order — [объект заказа](orders_object.md)
        {
            "type": "deliveryTo",
            "to": {
-               "id": "e90f1820-0128-11e5-80c7-00155d903d03", //locationId
+               "id": "e90f1820-0128-11e5-80c7-00155d903d03", // locationId
                "address": {
                    "address": "Варшавское шоссе, д, 1",
                    "dates": {
@@ -105,7 +105,7 @@ Order — [объект заказа](orders_object.md)
 }
 ```
 
-`locationId` для формирования объекта типа `Location` можно получить из ресурса `Locations`. `terminalId` можно получить из ресурса `Terminals`.
+`locationId` для формирования объекта типа `Location` можно получить из ресурса [Locations](locations.md). `terminalId` можно получить из ресурса [Terminals](terminals.md).
 
 ---
 
