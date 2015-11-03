@@ -2,7 +2,7 @@
 
 Для удаления объекта надо послать DELETE-запрос к объекту ресурса. 
 
-`DELETE https://vozovoz.ru/api/v1/[название ресурса]/[ID]`
+`DELETE https://vozovoz.ru/api/v1/<название ресурса>/<id>`
 
 ---
 
