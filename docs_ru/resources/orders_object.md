@@ -167,16 +167,6 @@ dates | object | Даты:
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
-##### Услуга «Сбор за ценность груза»
-
-Имя | Тип | Описание | Значение
---- | --- | -------- | -------- 
-type | string | Тип услуги | ""
-name | string | Название услуги
-sortIndex | number | Индекс сортировки
-counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-cost | [Order.Cost](#service.cost) | Стоимость услуги
-
 ##### Услуга «Возврат сопроводительных документов»
 
 Имя | Тип | Описание | Значение
