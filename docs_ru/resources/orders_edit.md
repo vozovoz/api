@@ -16,7 +16,7 @@ smsCode | string | если пользователь не авторизован
 ```js
 HTTP/1.1 200 OK
 {
-    "data" : <объект Order>
+    "data": <объект Order>
 }
 ```
 
