@@ -29,7 +29,7 @@ HTTP/1.1 400 Bad Request
 ```js
 HTTP/1.1 404 Not Found
 {
-    "message": "Resource not found"
+    "message": "Ресурс не найден"
 }
 ```
 
@@ -38,7 +38,7 @@ HTTP/1.1 404 Not Found
 ```js
 HTTP/1.1 400 Bad Request
 {
-    "message": "Bad Request"
+    "message": "Ошибка в запросе. Проверьте данные"
 }
 ```
 
@@ -47,7 +47,7 @@ HTTP/1.1 400 Bad Request
 ```js
 HTTP/1.1 403 Forbidden
 {
-    "message": "Forbidden"
+    "message": "Доступ запрещен"
 }
 ```
 
@@ -56,7 +56,7 @@ HTTP/1.1 403 Forbidden
 ```js
 HTTP/1.1 500 Internal Server Error
 {
-    "message": "Internal Server Error"
+    "message": "Что-то пошло не так. Повторите попытку"
 }
 ```
 
@@ -65,7 +65,7 @@ HTTP/1.1 500 Internal Server Error
 ```js
 HTTP/1.1 503 Service Unavailable
 {
-    "message": "Maintenance"
+    "message": "Производится обновление"
 }
 ```
 
