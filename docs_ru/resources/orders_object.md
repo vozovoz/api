@@ -171,3 +171,35 @@ type | string | Тип услуги | "returnOfSupportingDocuments"
 name | string | Название услуги
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Cost](#service.cost) | Стоимость услуги
+
+##### Объект <a name="service.location">`Order.Service.Location`</a>`
+
+Имя | Тип | Описание
+--- | --- | --------
+id | string | Идентификатор населенного пункта
+type | string | Тип (например, "г" — город)
+name | string | Название
+address | [Location.Address](#service.location.address) | Адрес
+terminal | [Location.Terminal](#service.location.terminal) | Терминал
+
+##### Объект <a name="service.location.address">`Order.Service.Location.Address`</a>
+
+Имя | Тип | Описание
+--- | --- | --------
+address | string | Идентификатор населенного пункта
+dates | object | Дата и время относительно часового пояса населенного пункта:
+&nbsp; dates.from | &nbsp; [Date](../general/resources.md#format) | &nbsp; начальная дата
+&nbsp; dates.to | &nbsp; [Date](../general/resources.md#format) | &nbsp; конечная дата
+floor | number | Этаж
+needWork | boolean | Погрузочно/разгузочные работы
+hasLift | boolean | Грузовой лифт
+
+##### Объект <a name="service.location.terminal">`Order.Service.Location.Terminal`</a>
+
+Имя | Тип | Описание
+--- | --- | --------
+id | string | terminalId
+address | string | Адрес терминала
+dates | object | Дата и время относительно часового пояса населенного пункта:
+&nbsp; dates.from | &nbsp; [Date](../general/resources.md#format) | &nbsp; отправление
+&nbsp; dates.to | &nbsp; [Date](../general/resources.md#format) | &nbsp; прибытие
