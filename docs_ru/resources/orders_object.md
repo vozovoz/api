@@ -152,6 +152,32 @@ counteragents | [Counteragents](counteragents.md) | Контрагенты, уч
 to | [Order.Location](#location) | Место отвоза груза
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
+##### Услуга «Погрузочные работы»
+
+Имя | Тип | Описание | Значение
+--- | --- | -------- | -------- 
+type | string | Тип услуги | "fromLoadingWorks"
+name | string | Название услуги
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
+works | Object | Работы:
+&nbsp; works.needWork | &nbsp; boolean | &nbsp; Погрузочные работы
+&nbsp; works.hasLift | &nbsp; boolean | &nbsp; Грузовой лифт
+&nbsp; works.floor | &nbsp; integer | &nbsp; Этаж
+cost | [Order.Cost](#service.cost) | Стоимость услуги
+
+##### Услуга «Разгрузочные работы»
+
+Имя | Тип | Описание | Значение
+--- | --- | -------- | -------- 
+type | string | Тип услуги | "toLoadingWorks"
+name | string | Название услуги
+counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
+works | Object | Работы:
+&nbsp; works.needWork | &nbsp; boolean | &nbsp; Разгрузочные работы
+&nbsp; works.hasLift | &nbsp; boolean | &nbsp; Грузовой лифт
+&nbsp; works.floor | &nbsp; integer | &nbsp; Этаж
+cost | [Order.Cost](#service.cost) | Стоимость услуги
+
 ##### Услуга «Ответственное хранение»
 
 Имя | Тип | Описание | Значение
@@ -190,9 +216,6 @@ address | string | Идентификатор населенного пункт�
 dates | object | Дата и время относительно часового пояса населенного пункта:
 &nbsp; dates.from | &nbsp; [Date](../general/resources.md#format) | &nbsp; начальная дата
 &nbsp; dates.to | &nbsp; [Date](../general/resources.md#format) | &nbsp; конечная дата
-floor | number | Этаж
-needWork | boolean | Погрузочно/разгузочные работы
-hasLift | boolean | Грузовой лифт
 
 #### Объект <a name="location.terminal">`Order.Location.Terminal`</a>
 
