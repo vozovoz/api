@@ -172,17 +172,17 @@ name | string | Название услуги
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
-##### Объект <a name="location">`Order.Location`</a>
+#### Объект <a name="location">`Order.Location`</a>
 
 Имя | Тип | Описание
 --- | --- | --------
 id | string | Идентификатор населенного пункта
 type | string | Тип (например, "г" — город)
 name | string | Название
-address | [Location.Address](#location.address) | Адрес
-terminal | [Location.Terminal](#location.terminal) | Терминал
+address | [Order.Location.Address](#location.address) | Адрес
+terminal | [Order.Location.Terminal](#location.terminal) | Терминал
 
-##### Объект <a name="location.address">`Order.Location.Address`</a>
+#### Объект <a name="location.address">`Order.Location.Address`</a>
 
 Имя | Тип | Описание
 --- | --- | --------
@@ -194,7 +194,7 @@ floor | number | Этаж
 needWork | boolean | Погрузочно/разгузочные работы
 hasLift | boolean | Грузовой лифт
 
-##### Объект <a name="location.terminal">`Order.Location.Terminal`</a>
+#### Объект <a name="location.terminal">`Order.Location.Terminal`</a>
 
 Имя | Тип | Описание
 --- | --- | --------
