@@ -159,7 +159,7 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | "fromLoadingWorks"
 name | string | Название услуги
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-works | Object | Работы:
+works | object | Работы:
 &nbsp; works.needWork | &nbsp; boolean | &nbsp; Погрузочные работы
 &nbsp; works.hasLift | &nbsp; boolean | &nbsp; Грузовой лифт
 &nbsp; works.floor | &nbsp; integer | &nbsp; Этаж
@@ -172,7 +172,7 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | "toLoadingWorks"
 name | string | Название услуги
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-works | Object | Работы:
+works | object | Работы:
 &nbsp; works.needWork | &nbsp; boolean | &nbsp; Разгрузочные работы
 &nbsp; works.hasLift | &nbsp; boolean | &nbsp; Грузовой лифт
 &nbsp; works.floor | &nbsp; integer | &nbsp; Этаж
