@@ -127,8 +127,8 @@ max | object | Максимальные:
 type | string | Тип услуги | "shipping"
 name | string | Название услуги
 counteragents | [Counteragents](counteragents.md) |Контрагенты, участвующие в заказе
-from | [Location](locations.md) | Место отправления
-to | [Location](locations.md) | Место получения (терминал)
+from | [Order.Location](#location) | Место отправления
+to | [Order.Location](#location) | Место получения (терминал)
 cargo | [Order.Cargo](#cargo) | Груз
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
@@ -139,7 +139,7 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | "deliveryFrom"
 name | string | Название услуги
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-from | [Location](locations.md) | Место забора груза
+from | [Order.Location](#location) | Место забора груза
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Отвоз груза»
@@ -149,7 +149,7 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 type | string | Тип услуги | "deliveryTo"
 name | string | Название услуги
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
-to | [Location](locations.md) | Место отвоза груза
+to | [Order.Location](#location) | Место отвоза груза
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
 ##### Услуга «Ответственное хранение»
