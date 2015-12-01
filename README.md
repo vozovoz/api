@@ -1,4 +1,4 @@
-# Vozovoz API
+# Vozovoz API v1.0
 
 Vozovoz API представляет REST-интерфейс для взаимодействия с сайтом [vozovoz.ru](https://vozovoz.ru/).
 В качестве протокола передачи данных используется HTTPS.
