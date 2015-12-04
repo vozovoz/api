@@ -33,7 +33,7 @@ or | [[[Conditions.condition](#conditions.condition)]] | Массив ИЛИ м�
 
 Имя | Тип | Описание
 --- | --- | --------
-value | [Conditions.condition.value](#conditions.condition.value)] | Параметры условия
+value | [Conditions.condition.value](#conditions.condition.value) | Параметры условия
 field | string | Поле, к которому применяется условие
 
 ### Объект <a name="conditions.condition.value">`Conditions.condition.value`</a>
