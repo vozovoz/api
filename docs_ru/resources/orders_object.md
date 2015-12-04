@@ -195,6 +195,7 @@ cost | [Order.Cost](#service.cost) | Стоимость услуги
 --- | --- | -------- | -------- 
 type | string | Тип услуги | "returnOfSupportingDocuments"
 name | string | Название услуги
+location | [Order.Location](#location) | Адрес возврата
 counteragents | [Counteragents](counteragents.md) | Контрагенты, участвующие в заказе
 cost | [Order.Cost](#service.cost) | Стоимость услуги
 
