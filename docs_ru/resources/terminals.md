@@ -15,7 +15,7 @@ subway | string | Станция метро
 position | object | Расположение населенного пункта: `type` — тип расположения на карте (`Point`), `coordinates` — массив координат (долгота, широта)
 zone | object | Зона доставки: `id` — идентификатор зоны, `name` — название
 location | object | Населенный пункт терминала: `id` — идентификатор населенного пункта, `name` — название, `type` — тип
-conditions | [Conditions](#conditions)] | Условия приема грузов
+conditions | [Conditions](#conditions) | Условия приема грузов
 timetable | object | Расписание работы
 files | object | Ссылки на файлы: `locationMap` — схема проезда, `photosArchive` — архив фотографий, `photos` — массив фотографий
 
