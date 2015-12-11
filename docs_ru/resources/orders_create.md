@@ -1,6 +1,6 @@
 # Создание заказа
 
-`GET https://vozovoz.ru/api/v1/orders`
+`POST https://vozovoz.ru/api/v1/orders`
 
 Параметры запроса:
 
@@ -20,7 +20,7 @@ HTTP/1.1 201 Created
 
 Order — [объект заказа](orders_object.md)
 
-**Создание заказа**
+**Пример**
 
 `POST https://vozovoz.ru/api/v1/orders`
 
