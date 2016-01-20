@@ -2,7 +2,7 @@
 
 ## Расписание для сдачи груза на 7 дней вперед
 
-`POST https://api.vozovoz.ru/v1/timetables/departure`
+`POST https://vozovoz.ru/api/v1/timetables/departure`
 
 Параметры запроса:
 
@@ -32,7 +32,7 @@ HTTP/1.1 200 OK
 
 ## Расписание для получения груза на 3 дня вперед
 
-`POST https://api.vozovoz.ru/v1/timetables/arrival`
+`POST https://vozovoz.ru/api/v1/timetables/arrival`
 
 Параметры запроса:
 
